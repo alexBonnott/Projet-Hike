@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Projet Hike</title>
+        <title>MesSentiers</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="style.css"/>
@@ -11,19 +11,50 @@
     </head>
     <body>
         <header>
-            <h1>Projet Hike</h1>
+            <nav>
+                <a href="index.html"><h1>MesSentiers</h1></a>
+                <ul class="menu">
+                    <li class="option"><a href="#mesrandonee">Mes randonnées</a>
+                        <ul class="sousOption">
+                            <li><a>Bourgogne</a></li>
+                            <li><a>Bourgogne</a></li>
+                            <li><a>Bourgogne</a></li>
+                            <li><a>Bourgogne</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
+        <hr style="border: solid 0.01cm gainsboro;"/>
         <main>
             <section id="mesrandonee">
-                <h2>Mes randonées</h2>
-                <div class="randonee">
-                    <h3>Lac Blanc</h3>
-                    <p>Distance : 6 km</p>
-                    <p>Difficulté : Moyen</p>
+                <div id="topText">
+                    <h3>Dernères randonnées ajoutées</h3>
+                    <p>Dernier ajout : 12/03/2026</p>
                 </div>
-            </section>
-            <section id="map">
-
+                <div id="positionRando">
+                    <div class="randonee">
+                        <img src="images/grands_crue1.jpg" />
+                        <h3>Lac Blanc</h3>
+                        <p>Bourgogne</p>
+                        <p>Familliale</p>
+                        <a>Voire plus</a>
+                    </div>
+                    <div class="randonee">
+                        <div class="container">
+                            <img src="images/grands_crue1.jpg" />
+                            <ul class="textInfo">
+                                <li>6km</li>
+                                <li>125m↑</li>
+                                <li>125m↓</li>
+                            </ul>
+                        </div>
+                        <h3>Lac Blanc</h3>
+                        <p>Bourgogne</p>
+                        <p>Sportive</p>
+                        <a>Voire plus</a>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>

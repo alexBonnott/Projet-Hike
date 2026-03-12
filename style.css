@@ -1,35 +1,169 @@
 body{
-    background-color: bisque;
-}
-header{
-    text-align: center;
-}
-#mesrandonee{
-    padding-top: 1%;
-    color: rgb(245, 230, 230);
-    background-color: rgb(2, 2, 46);
-    border-radius: 5%;
+    background-color: white;
 }
 
-#mesrandonee h2{
+header {
     text-align: center;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu{
+    width: 50%;
+    font-size: x-large;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: right;
+}
+
+.option{
+    text-align: center;
+    position: relative;
+}
+
+.option::after{
+    content: '▿';
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.option:hover::after{
+    transform: rotate(180deg);
+}
+
+.sousOption{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    font-size: large;
+    list-style: none;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    align-items: center;
+    transform: translateY(-10px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+}
+
+.option:hover .sousOption{
+    transform: translateY(0); 
+    visibility: visible;
+    opacity: 1;
+}
+
+.sousOption li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: 0.1px solid black;
+}
+
+.sousOption li a:hover{
+    color: red;
+}
+
+.menu li{
+    text-align: center;
+    text-decoration: none;
+    margin-right:20%;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+#mesrandonee{
+    padding-top: 1%;
+    color: black;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    padding-bottom: 5px;
+}
+
+#mesrandonee h3{
+    margin: 0;
+    margin-left: 1%;
+}
+
+#positionRando{
+    display: flex;
+}
+#topText{
+    align-items: center;
+    display: flex;
+}
+#topText p{
+    margin-left: 10px;
 }
 
 .randonee{
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(150, 133, 103);
-    width: 20%;
-    border: solid 2px black;
-    border-radius: 5%;
-}
-
-.randonee h3{
+    background: #F5F5F5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 250px;
+    margin: 5px;
     text-align: center;
+    color: black;
+    padding-bottom: 10px;
 }
 
-.randonee p{
-    margin-left: 5%;
+.textInfo{
+    list-style: none;
+    position: absolute;       
+    color: azure;
+    margin-top: 0;
+    top: 10%;                
+    left: 5%;
+    display: flex;  
+    padding: 0;
+}
+
+.textInfo li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px hidden gainsboro ;     
+    background-color: rgb(75, 216, 75);
+    margin-left: 10px;
+}
+
+.container{
+    position: relative;
+    height: auto;
+}
+
+.randonee img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.randonee a{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.randonee a:hover{
+    background-color: gainsboro;
 }
 
 #map{

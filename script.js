@@ -33,10 +33,12 @@
             "Satellite" : satellite
         };
 
-        new L.GPX("Sentier_des_grands_crue.gpx", {
+        //Ajout de parcour gpx
+        new L.GPX('de.gpx', {
         async: true
         }).on('loaded', function(e) {
         map.fitBounds(e.target.getBounds());
         }).addTo(map);
 
+        //Ajout des calques à la carte
         L.control.layers(baseMaps).addTo(map);
