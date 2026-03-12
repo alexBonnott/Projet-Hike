@@ -1,0 +1,38 @@
+body{
+    background-color: bisque;
+}
+header{
+    text-align: center;
+}
+#mesrandonee{
+    padding-top: 1%;
+    color: rgb(245, 230, 230);
+    background-color: rgb(2, 2, 46);
+    border-radius: 5%;
+}
+
+#mesrandonee h2{
+    text-align: center;
+}
+
+.randonee{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(150, 133, 103);
+    width: 20%;
+    border: solid 2px black;
+    border-radius: 5%;
+}
+
+.randonee h3{
+    text-align: center;
+}
+
+.randonee p{
+    margin-left: 5%;
+}
+
+#map{
+    width: 80%;
+    height: 500px;
+}
