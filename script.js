@@ -33,7 +33,7 @@
             "Satellite" : satellite
         };
 
-        new L.GPX("Sentier_des_grands_crue.GPX", {
+        new L.GPX("Sentier_des_grands_crue.gpx", {
         async: true
         }).on('loaded', function(e) {
         map.fitBounds(e.target.getBounds());
