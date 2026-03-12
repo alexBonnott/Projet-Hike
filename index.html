@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>MesSentiers</title>
+        <title>Acceuil-RandoGo</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" type="images/png" href="images/logo.png"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
         <script src="https://unpkg.com/leaflet-gpx/gpx.js"></script>
@@ -12,16 +13,16 @@
     <body>
         <header>
             <nav>
-                <a href="index.html"><h1>MesSentiers</h1></a>
+                <a href="index.html"><img id="logo" src="images/logo.png"></a>
                 <ul class="menu">
-                    <li class="option"><a href="#mesrandonee">Mes randonnées</a>
+                    <li class="option">Mes randonnées
                         <ul class="sousOption">
-                            <li><a>Bourgogne</a></li>
-                            <li><a>Bourgogne</a></li>
-                            <li><a>Bourgogne</a></li>
                             <li><a>Bourgogne</a></li>
                         </ul>
                     </li>
+                    <li><a>Carte</a>
+                    </li>
+                    <li><a>A propos de moi</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,11 +35,19 @@
                 </div>
                 <div id="positionRando">
                     <div class="randonee">
-                        <img src="images/grands_crue1.jpg" />
+                        <div class="container">
+                            <img src="images/grands_crue1.jpg" />
+                            <ul class="textInfo">
+                                <li>6km</li>
+                                <li>125m↑</li>
+                                <li>125m↓</li>
+                            </ul>
+                        </div>
                         <h3>Lac Blanc</h3>
                         <p>Bourgogne</p>
                         <p>Familliale</p>
                         <a>Voire plus</a>
+                        <p class="datePubl">12/03/2026</p>
                     </div>
                     <div class="randonee">
                         <div class="container">
@@ -53,13 +62,34 @@
                         <p>Bourgogne</p>
                         <p>Sportive</p>
                         <a>Voire plus</a>
+                        <p class="datePubl">12/03/2026</p>
                     </div>
                 </div>
             </section>
         </main>
+        <hr style="border: solid 0.01cm gainsboro;"/>
         <footer>
-
+            <section>
+                <h3>À propos</h3>
+                <p>RandoGo, votre site pour découvrir des randonnées et itinéraires partout.</p>
+            </section>
+            <div id="footer-contenair">
+                <section class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email : <a href="mailto:alex@randogo.com">alex@randogo.com</a></p>
+                    <p>Téléphone : 07 85 30 51 59</p>
+                </section>
+                <div id="ligne-verticale"></div>
+                <section class="footer-section">
+                    <h3>Resaux Sociaux</h3>
+                    <a><img class="logo-Resaux"src="images/instagram.png"/>instagram</a>
+                </section>
+            </div>
+            <section>
+                <p>© 2026 RandoGo. Tous droits réservés.</p>
+            </section>
         </footer>
         <script src="script.js"></script>
     </body>
+
 </html>
