@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Carte des sentiers</title>
-        <link rel="stylesheet" href="css/carte.css"/>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/bourgogne.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="images/png" href="images/logo.png"/>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <script src="https://unpkg.com/leaflet-gpx/gpx.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     </head>
     <body>
         <header>
@@ -30,9 +24,44 @@
         </header>
         <hr style="border: solid 0.01cm #2E8B57;"/>
         <main>
-            <h3>Carte des sentier</h3>
-            <div id="map">
-
+            <div class="randonnees">
+                <div class="contenair">
+                    <div>
+                        <h2>Vallée de l'ouche</h2>
+                        <hr>
+                        <p>Distance : 24.5km</p>
+                        <p>Type: boucle, sportif</p>
+                        <p>Départ / Arrivé : Dijon (lac Kir)</p>
+                        <p>Cette randonnées explore la valée de l'ouche par les combes</p>
+                        <a class="button">Voir plus</a>
+                    </div>
+                    <div class="information-d">
+                        <img src="images/valle-Ouche1.jpg">
+                        <hr>
+                        <p>Publié le 13/03/2026</p>
+                    </div>
+                </div>
+                <hr style="border: solid 0.01cm green;">
+                <div class="contenair">
+                    <div>
+                        <h2>Vallée de l'ouche</h2>
+                        <hr>
+                        <p>Distance : 24.5km</p>
+                        <p>Type: boucle, sportif</p>
+                        <p>Départ : Dijon / lac Kir</p>
+                        <p>Cette randonnées explore la valée de l'ouche par les combes</p>
+                        <a class="button">Voir plus</a>
+                    </div>
+                    <div class="information-d">
+                        <img src="images/valle-Ouche1.jpg">
+                        <hr>
+                        <p>Publié le 13/03/2026</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bas-page">
+                <a class="button-page">1</a>
+                <a class="button-page">2</a>
             </div>
         </main>
         <hr style="border: solid 0.01cm gainsboro;"/>
@@ -57,6 +86,5 @@
                 <p>© 2026 RandoGo. Tous droits réservés.</p>
             </section>
         </footer>
-        <script src="js/carte.js"></script>
     </body>
 </html>

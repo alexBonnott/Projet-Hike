@@ -36,8 +36,11 @@
         //Ajout de parcour gpx
 
         const sentier = [{
-            nom : "Sentier des Grands Crues",
-            gpx : "../gpx/grandcrues.gpx",
+            nom : "Vallé de l'ouche",
+            gpx : "../gpx/vallee_de_l'ouche.gpx",
+            distance : "24.5",
+            denivele_p : "932",
+            denivele_n : "953",
             page: "grandcrues.html",
             color: "red"
         }
@@ -59,6 +62,10 @@
         .setContent(`
         <div class="popup-cotenair">
             <b>`+s.nom+`</b><br><br>
+            <b>Distance: `+ s.distance+` km<br>Dénivelé positif: `+s.denivele_p+` m<br>
+            Dénivelé negatif: `+s.denivele_n+` m</b>
+            <br>
+            <br>
             <button
                 onclick="window.location.href='`+s.page+`'">
                 Voir plus
@@ -69,5 +76,15 @@
         })
         .addTo(map);
     });
-        //Ajout des calques à la carte
-        L.control.layers(baseMaps).addTo(map);
+    //Ajout des calques à la carte
+    L.control.layers(baseMaps).addTo(map);
+    
+    var geocoder = L.Control.geocoder({
+    defaultMarkGeocode: false,
+    placeholder: "Rechercher une ville..."
+    }).addTo(map);
+
+    geocoder.on('markgeocode', function(e) {
+    var bbox = e.geocode.bbox;
+    map.fitBounds(bbox);
+    });
