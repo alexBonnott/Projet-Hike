@@ -38,7 +38,7 @@
         const sentier = [{
             nom : "Sentier des Grands Crues",
             gpx : "../gpx/grandcrues.gpx",
-            page: "../html/grandcrues.html",
+            page: "../docs/grandcrues.html",
             color: "red"
         }
         ];
