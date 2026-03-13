@@ -99,98 +99,20 @@ header a{
     color: black;
 }
 
-#mesrandonee{
-    padding-top: 1%;
-    color: black;
-    border-bottom-right-radius: 5%;
-    border-bottom-left-radius: 5%;
-    padding-bottom: 5px;
-}
-
-#mesrandonee h3{
-    margin: 0;
-    margin-left: 1%;
-}
-
-#positionRando{
-    display: flex;
-}
-#topText{
-    align-items: center;
-    display: flex;
-}
-#topText p{
-    margin-left: 10px;
-}
-
-.randonee{
-    background: #F5F5F5;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    overflow: hidden;
-    width: 250px;
-    margin: 5px;
-    text-align: center;
-    color: black;
-    padding-bottom: 10px;
-}
-
-.textInfo{
-    list-style: none;
-    position: absolute;       
-    color: azure;
-    margin-top: 0;
-    top: 10%;                
-    left: 5%;
-    display: flex;  
-    padding: 0;
-}
-
-.datePubl{
-   font-size: small;
-    margin-left: 70%;
-    margin-bottom: 0;
-}
-
-
-.textInfo li{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border: 1px hidden gainsboro ;     
-    background-color: rgb(75, 216, 75);
-    margin-left: 10px;
-}
-
-.container{
-    position: relative;
-    height: auto;
-}
-
-.randonee img {
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-}
-
-.randonee a{
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 20%;
-    transition: background-color 0.5s ease;
-}
-
-.randonee a:hover{
-    background-color: gainsboro;
-}
-
 #map{
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     height: 500px;
 }
 
+.popup-cotenair{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
 footer{
     text-align: center;
     margin: 0;

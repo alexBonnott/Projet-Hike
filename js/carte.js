@@ -1,6 +1,6 @@
 
         // L'id du container, par exemple <div id="map"></div>
-        var map = L.map('map').setView([48.5839, 7.7455], 13);
+        var map = L.map('map').setView([47.319215, 5.041470], 10);
 		
         // Plan IGN avec une transparence de 50%
         var planIGN = L.tileLayer('https://data.geopf.fr/wmts?'+
@@ -34,11 +34,40 @@
         };
 
         //Ajout de parcour gpx
-        new L.GPX('de.gpx', {
-        async: true
-        }).on('loaded', function(e) {
-        map.fitBounds(e.target.getBounds());
-        }).addTo(map);
 
+        const sentier = [{
+            nom : "Sentier des Grands Crues",
+            gpx : "../gpx/grandcrues.gpx",
+            page: "../html/grandcrues.html",
+            color: "red"
+        }
+        ];
+
+        sentier.forEach(function(s){
+            new L.GPX(s.gpx, {
+            async: true,
+            polyline_options: {
+            color: s.color
+            },
+            markers:{
+                startIcon: null,
+                endIcon: null
+            }
+            }).on('click', function(e) {
+            L.popup()
+        .setLatLng(e.latlng)
+        .setContent(`
+        <div class="popup-cotenair">
+            <b>`+s.nom+`</b><br><br>
+            <button
+                onclick="window.location.href='`+s.page+`'">
+                Voir plus
+            </button>
+        </div>
+        `)
+        .openOn(map);
+        })
+        .addTo(map);
+    });
         //Ajout des calques à la carte
         L.control.layers(baseMaps).addTo(map);
