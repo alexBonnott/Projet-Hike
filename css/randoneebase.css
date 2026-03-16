@@ -203,11 +203,17 @@ footer{
 
 @media (max-width: 768px){
 
-    /*Header*/
+    /*-Header-*/
     .menu{
-        font-size:small;
+        font-size:smaller;
     }
 
+    #logo{
+        height: 100px;
+    }
+
+    /*-----*/
+    
     #contenair{
         padding-right: 5%;
         padding-left: 5%;

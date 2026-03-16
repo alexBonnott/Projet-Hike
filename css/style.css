@@ -3,6 +3,7 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -119,6 +120,7 @@ header a{
 
 #positionRando{
     display: flex;
+    flex-wrap: wrap;
 }
 #topText{
     align-items: center;
@@ -198,6 +200,7 @@ header a{
 footer{
     text-align: center;
     margin: 0;
+    height: 46%;
     padding-top: 2px;
     font-size: large;
     background-color: #2E8B57;
@@ -237,6 +240,27 @@ footer{
 
     /*Header*/
     .menu{
-        font-size:small;
+        font-size:smaller;
     }
+
+    #logo{
+        height: 100px;
+    }
+
+    #topText{
+        justify-content: space-between;
+    }
+
+    .textInfo{
+        left: 5%;
+    }
+
+    .textInfo li{
+        padding: 5px;
+        margin-left: 2%;
+    }
+    
+    .randonee{
+        width: 47%;
+        }
 }

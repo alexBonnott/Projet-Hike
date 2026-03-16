@@ -3,6 +3,7 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -119,6 +120,7 @@ header a{
 footer{
     text-align: center;
     margin: 0;
+    height: 46%;
     padding-top: 2px;
     font-size: large;
     background-color: #2E8B57;
@@ -158,6 +160,22 @@ footer{
 
     /*Header*/
     .menu{
-        font-size:small;
+        font-size:smaller;
+    }
+
+    #logo{
+        height: 100px;
+    }
+
+    #contenue{
+        flex-direction: column;
+    }
+    #text{
+        order: 1;
+    }
+    #contenue img{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

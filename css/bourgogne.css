@@ -3,6 +3,7 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -199,6 +200,34 @@ footer{
 
     /*Header*/
     .menu{
-        font-size:small;
+        font-size:smaller;
+    }
+
+    #logo{
+        height: 100px;
+    }
+
+    .contenair{
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .randonnees{
+        margin:15px;
+    }
+
+    .information-g{
+        order: 1;
+        width: 100%;
+    }
+    .information-d{
+        margin-top: 5%;
+        order: 2;
+    }
+
+    .button{
+        display: block;
+        text-align: center;
     }
 }
