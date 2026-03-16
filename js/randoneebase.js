@@ -37,55 +37,17 @@
 
         const sentier = [
         {
-            nom : "Vers le mont Afrique",
             gpx : "../gpx/vers_le_mont_afrique.gpx",
-            distance: "22.7",
-            denivele_p: "830",
-            denivele_n: "840",
-            page: "../randonees/verslemontafrique.html",
-            color: "blue"
         }
         ];
 
-        sentier.forEach(function(s){
-            new L.GPX(s.gpx, {
+
+        new L.GPX("../gpx/.gpx", {
             async: true,
             polyline_options: {
             color: s.color
-            },
-            markers:{
-                startIcon: null,
-                endIcon: null
             }
-            }).on('click', function(e) {
-            L.popup()
-        .setLatLng(e.latlng)
-        .setContent(`
-        <div class="popup-cotenair">
-            <b>`+s.nom+`</b><br><br>
-            <b>Distance: `+ s.distance+` km<br>Dénivelé positif: `+s.denivele_p+` m<br>
-            Dénivelé negatif: `+s.denivele_n+` m</b>
-            <br>
-            <br>
-            <button
-                onclick="window.location.href='`+s.page+`'">
-                Voir plus
-            </button>
-        </div>
-        `)
-        .openOn(map);
-        })
-        .addTo(map);
-    });
+        }).addTo(map);
+
     //Ajout des calques à la carte
     L.control.layers(baseMaps).addTo(map);
-    
-    var geocoder = L.Control.geocoder({
-    defaultMarkGeocode: false,
-    placeholder: "Rechercher une ville..."
-    }).addTo(map);
-
-    geocoder.on('markgeocode', function(e) {
-    var bbox = e.geocode.bbox;
-    map.fitBounds(bbox);
-    });

@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Carte des sentiers</title>
-        <link rel="stylesheet" href="css/carte.css"/>
         <meta charset="UTF-8"/>
+        <title>Randonnées - Vers le mont Afrique</title>
+        <link rel="stylesheet" href="../css/"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="icon" type="images/png" href="images/logo.png"/>
+        <link rel="icon" type="images/png" href="../images/logo.png"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
         <script src="https://unpkg.com/leaflet-gpx/gpx.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     </head>
     <body>
         <header>
             <nav>
-                <a href="index.html"><img id="logo" src="images/logo.png"></a>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"></a>
                 <ul class="menu">
                     <li class="option">Mes randonnées
                         <ul class="sousOption">
-                            <li><a href="regions/bourgogne.html">Bourgogne</a></li>
+                            <li><a href="../regions/bourgogne.html">Bourgogne</a></li>
                         </ul>
                     </li>
-                    <li><a href="carte.html">Carte</a>
+                    <li><a href="../carte.html">Carte</a>
                     </li>
-                    <li><a href="information.html">A propos</a></li>
+                    <li><a href="../information.html">A propos</a></li>
                 </ul>
             </nav>
         </header>
         <hr style="border: solid 0.01cm #2E8B57;"/>
         <main>
-            <h3>Carte des sentier</h3>
-            <div id="map">
+            <div id="contenair">
+                <div id="content">
+                    <h2></h2>
+                    <hr>
+                    <p>ffddf</p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <p>fds</p>
+                </div>
+                <div id="informations">
+                    <div id="map">
 
+                    </div>
+                    <hr>
+                    <div id="contenair2">
+                        <div>
+                            <p>Distance : km</p>
+                            <p>Dénivelé positif : m↑</p>
+                            <p>Dénivelé négatif : m↓</p>
+                            <p>Balsisage : <span id="b1"></span>, <span id="b2"></span></p>
+                        </div>
+                        <div id="gpx">
+                            <p>Trace gpx:</p>
+                            <a id="lien_gpx">Télégarger</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <hr style="border: solid 0.01cm gainsboro;"/>
@@ -50,13 +71,13 @@
                 <div id="ligne-verticale"></div>
                 <section class="footer-section">
                     <h3>Resaux Sociaux</h3>
-                    <a><img class="logo-Resaux"src="images/instagram.png"/>instagram</a>
+                    <a><img class="logo-Resaux"src="../images/instagram.png"/>instagram</a>
                 </section>
             </div>
             <section>
                 <p>© 2026 RandoGo. Tous droits réservés.</p>
             </section>
         </footer>
-        <script src="js/carte.js"></script>
+        <script src="../js/"></script>
     </body>
 </html>
