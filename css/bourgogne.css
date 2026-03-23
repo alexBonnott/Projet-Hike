@@ -161,6 +161,7 @@ header a{
 footer{
     text-align: center;
     margin: 0;
+    padding-bottom: 5px;
     padding-top: 2px;
     font-size: large;
     background-color: #2E8B57;

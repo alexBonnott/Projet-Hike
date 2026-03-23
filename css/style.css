@@ -155,7 +155,7 @@ header a{
 
 .datePubl{
    font-size: small;
-    margin-left: 70%;
+    margin-left: 65%;
     margin-bottom: 0;
 }
 
@@ -200,7 +200,7 @@ header a{
 footer{
     text-align: center;
     margin: 0;
-    height: 46%;
+    padding-bottom: 5px;
     padding-top: 2px;
     font-size: large;
     background-color: #2E8B57;
@@ -249,18 +249,22 @@ footer{
 
     #topText{
         justify-content: space-between;
+        padding-left: 3%;
+        margin-right: 3%;
     }
 
     .textInfo{
-        left: 5%;
+        left: 0%;
     }
 
     .textInfo li{
-        padding: 5px;
+        padding: 3%;
         margin-left: 2%;
     }
     
     .randonee{
         width: 47%;
         }
+
+    
 }

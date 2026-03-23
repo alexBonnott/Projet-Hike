@@ -77,8 +77,10 @@
         })
         .addTo(map);
     });
+    
     //Ajout des calques à la carte
     L.control.layers(baseMaps).addTo(map);
+    map.addControl(new L.Control.FullScreen());
     
     var geocoder = L.Control.geocoder({
     defaultMarkGeocode: false,

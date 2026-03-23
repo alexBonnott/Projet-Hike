@@ -8,6 +8,8 @@
         <link rel="icon" type="images/png" href="../images/logo.png"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.css" />
+        <script src="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.umd.js"></script>
         <script src="https://unpkg.com/leaflet-gpx/gpx.js"></script>
     </head>
     <body>
@@ -32,9 +34,116 @@
                 <div id="content">
                     <h2>Vers le mont Afrique</h2>
                     <hr>
-                    <p>ffddf</p>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <p>fds</p>
+                    <div id="div-images">
+                        <img src="../images/verslemontafrique/image1.jpg" data-index="0" onclick="openImage(this)"/>
+                        <img src="../images/verslemontafrique/image2.jpg" data-index="1" onclick="openImage(this)"/>
+                        <div id="image-plus">
+                            <img src="../images/verslemontafrique/image3.jpg" data-index="2"/>
+                            <svg id="plus" viewBox="0 0 30 30" onclick="seeMore()">
+                                <line x1="50%" y1="0" x2="50%" y2="100%" stroke="white" stroke-width="3"/>
+                                <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p>Cette randonée en <b>boucle</b> et en pleine <b>nature</b> néanmoins aux portes de Dijon, explore les combes sud-ouest de la vallée de l'ouche notament la <b>combe de la Gras</b>, la <b>combe aux loups</b> ou encore la <b>combe Bertrand</b>. Vous emprunterez alors des chemins <b>raides</b> et <b>accidentées</b> et notament un pierrier. Vous pourrez également découvire des roches uniques au portes de Dijon comme la <b>roche du crucifix</b>. Vous pourrez apercevoir des sangliers, chevreuils et lièvres. Ce sentier passe également par des <b>lieux d'intérêt culturels</b> comme le <b>fort de Motte-Girond</b> ou devant de vielle <b>cadole</b>. Ce sentier est idéal pour les randoneurs aguerrit qui cherche une escapade dans la nature ainsi que du défi.</p>
+                    <section>
+                        <h3>Départ:</h3>
+                        <p>La randonées débute et finie au parking de la combe à la Serpent à Dijon.</p>
+                    </section>
+                    <section>
+                        <h3>Difficulté</h3>
+                        <p>Type : <b>sportive</b></p>
+                        <p>Sens conseillé : anti-horaire</p>
+                        <p>Difficulté: <b>4/5</b></p>
+                        <p>Technicité : <b>3/5</b> (certaine sections demanderons de mettre les mains)</p>
+                    </section>
+                    <section>
+                        <h3>Précaution</h3>
+                        <p>Cette randonée suit <b>plusieurs balisages</b>, pour ne pas vous perdre, il vous est conseillé de <b>télécharger la trace gpx</b> depuis cette page, afin de la suivre grâce à un gps. Certaines montées et descentes en majeur parties dans les combes sont <b>glissantes</b> en <b>temps humide</b>, de plus certaines section présentes du <b>vide</b>. Ce sentier passe par <b>zones chassées</b>, il vous est conseillé d'évité ces zones là les jours de chasse ou de prendre tous les précautions nécéssaire.</p>
+                        <p>Pour voir les zones et jour de chasse en Bourgogne : <a href="https://www.chasseinfo.fr/">chasseInfo.fr</a></p>
+                    </section>
+                    <section>
+                        <h3>Matérielle</h3>
+                        <p>Ce sentier néséscitte d'avoir des <b>chaussure de randonées</b> à tige basses, moyenne ou haute. Des batons de randonées sont conseillé. Pensez à bien vous <b>hydratez</b> et à vous <b>alimenté</b>. Prévoyez <b>2</b> jusqu'a <b>2.5</b> littres d'eau en hiver et <b>3</b> à <b>3.5</b> littres en été (<b>par personne</b>). Priviligier des aliments <b>sucrés</b>, des <b>fruits</b> ou des <b>barres énergétiques</b>. Des <b>tables de picnic</b> sont présente sur le parcourt et vous sont indiquer dans la description des étapes du parcourt.</p>
+                    </section>
+                    <div>
+                        <section id="partie1">
+                            <hr>
+                            <h3>Etape 1</h3>
+                            <p>Balisage : <b>pas de balisage</b></p>
+                            <p>L'étape 1 ne suit pas de balsisage particulier. Il vous faut alors suivre la trace gpx. Le début se situe au parking de la combe à la serpent. A la fin de l'étape 1 vous arriverez sur un promontoire présentant une vue splendide sur le lac Kir.</p>
+                            <div class="contenair-image">
+                                <div>
+                                    <img src="../images/verslemontafrique/image1.jpg" data-index="0" onclick="openImage(this)"/>
+                                    <p class="text-image">Vue lac Kir</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="partie2">
+                            <hr>
+                            <h3>Etape 2</h3>
+                            <p>Balisage : <span class="b1">rouge</span></p>
+                            <p>L'étape 2 suit le sentier Jean-Montmey du club alpin français de Dijon, balisé en rouge. Il vous suffirat donc de suivre se balisage. Cette section comporte une partie en forêt au bords de champs et une autre assez accidenté. Après une courte montée vous arriveré sur un nouveau promontoire avec une vue sur le lac Kir. Continuier de suivre le balisage rouge jusqu'a une route. Attention à ce moment là un changement de balisage est à prevoire (regardé l'étape 3).</p>
+                            <div class="contenair-image">
+                                <div>
+                                    <img src="../images/verslemontafrique/image2.jpg" data-index="1" onclick="openImage(this)"/>
+                                    <p class="text-image">Vue lac Kir</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="partie3">
+                            <hr>
+                            <h3>Etape 3</h3>
+                            <p>Balisage : <span class="b1">rouge</span> et <span class="b2">jaune</span></p>
+                            <p>L'étape 3 suit le sentier Charles Thevenin du club alpin francais de Dijon, balisé en rouge et jaune (un trait rouge et un trait jaune cote à cote). Vous devez alors traversez la route en allant tout droit pour attérir sur ce sentier. Ensuite vous devez suivre le balisage rouge et jaune. Cette partie du sentier est la plus sportif. Elle passe par différentes combes aux montées et descentes raides et accidentées, une grande prudence est alors de mise. Vous devrez d'abord longer un chantier, pour arrivé au niveau de la première combe qui est la combe de la Gras. Une fois descendu, la montée qui suit est assez raide et humide, n'ésitez pas à mettre les mains. Vous allez devoir ensuite franchir la combe Grivelle pour arriverez au niveau de la combe du diable. Cette dernière offre une vue éblouissante sur la commune de Velars-sur-Ouche et sont imprésionnant chemin de fer. Cette combe présente la descente la plus technique du sentier. En effet vous allez devoir évoluer dans un pierrier. Attention les petits cauilloux sous vos chaussures provoquent des glissades.</p>
+                            <div class="contenair-image">
+                                <div>
+                                    <img src="../images/verslemontafrique/image3.jpg" data-index="2" onclick="openImage(this)"/>
+                                    <p class="text-image">Combe du diable</p>
+                                </div>
+                                <div>
+                                    <img src="../images/verslemontafrique/image6.jpg" data-index="3" onclick="openImage(this)"/>
+                                </div>
+                            </div> 
+                        </section>
+                        <section id="partie4">
+                            <hr>
+                            <h3>Etape 4</h3>
+                            <p>Balisage : <span class="b3">croix blanche</span></p>
+                            <p>L'étape 4 suit le sentier Jean Sage du club alpin francais de Dijon, balisé avec des croix blanche. Attention au début de l'étape 4 il vous faudrat aller tous drois en direction du canal et non suivre le balisage rouge et jaune qui s'engage dans une nouvelle pente. Après avoir fait 300m, tournez a gauche, vous arriverez à la roche du crucifix. Il vous suffira alors de suivre le balisage blanc du sentier Jean Sage. Le partie qui suit est assez technique et offre des points de vues sur la commune de Velars-sur-Ouche et ces environs. A la fin de section rocheusse pour alors apercevoir au loin la chapelle Notre-Dame d'Etang nichée sur son col. Après avoir passez la combe Maréchal, vous arriverez sur la combe Bertrand qui signe la fin de la section sportif de se sentier. Une fois franchie, suivez toujours le balisage en forme de croix blanche en direction mont Afrique. Après une courte monté vous arriveré à son pied.</p>
+                            <div class="contenair-image">
+                                <div>
+                                    <img src="../images/verslemontafrique/image4.jpg" data-index="5" onclick="openImage(this)"/>
+                                    <p class="text-image">Vue N.D d'Etang</p>
+                                </div>
+                                <div>
+                                    <img src="../images/verslemontafrique/image5.jpg" data-index="4" onclick="openImage(this)"/>
+                                </div>
+                            </div> 
+                        </section>
+                        <section id="partie5">
+                            <hr>
+                            <h3>Etape 5</h3>
+                            <p>Balisage : <span class="b1">rouge</span></p>
+                            <p>Une fois au pied du mont afrique vous arriverez sur un chemin de gravier, ils vous faut alors prendre à gauche en direction de Corcelles-les-Monts, en suivant le balisage rouge. Après avoir fait 1km vous arriverez à une intersection, il faut prendre tout droit en suivant le balisage rouge. Vous devrez alors traversez une route pour continuer a suiver le balisage en direction de la combe à la Serpent. Vous trouverez sur la partie suivante un parc contenant des tables de picnic, ainsi que des toilettes publics. Continuer à suivre le balisage rouge jusqu'a arriver à une intersection.</p>
+                            <div class="contenair-image">
+                                <div>
+                                    
+                                </div>
+                            </div> 
+                        </section>
+                        <section id="partie6">
+                            <hr>
+                            <h3>Etape 6</h3>
+                            <p>Balisage : <b>pas de balisage</b></p>
+                            <p>À l'intersection tournez à droite et contuinez tous droit en direction du fort de la Motte-Girond. Une fois arriver au panneau indicatif, prenez à gauche, après une montée par une pente dousse vouz arriverez au fort de la Motte-Girond. Il vous faudrat ensuite redescendre au parking de la combe à la Serpent par des chemins accidentées.</p>
+                            <div class="contenair-image">
+                                <div>
+                                    <img src="../images/verslemontafrique/image7.jpg" data-index="6" onclick="openImage(this)"/>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
                 <div id="informations">
                     <div id="map">
@@ -46,13 +155,25 @@
                             <p>Distance : 22.7km</p>
                             <p>Dénivelé positif : 830m↑</p>
                             <p>Dénivelé négatif : 840m↓</p>
-                            <p>Balsisage : <span id="b1">jaune</span>, <span id="b2">rouge</span></p>
+                            <p>Balsisage : <span class="b1">rouge</span>, <span class="b1">rouge</span> et <span class="b2">jaune</span>, <span class="b3">croix blanche</span>,  <span class="b1">rouge</span></p>
                         </div>
                         <div id="gpx">
                             <p>Trace gpx:</p>
                             <a id="lien_gpx">Télégarger</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="overlay">
+                <svg id="close" width="30" height="30" viewBox="0 0 30 30" onclick="closeImg()">
+                    <line x1="0" y1="0" x2="30" y2="30" stroke="white" stroke-width="2"/>
+                    <line x1="30" y1="0" x2="0" y2="30" stroke="white" stroke-width="2"/>
+                </svg>
+                <div>
+                    <button class="button" onclick="switchLeft()"><</button>
+                    <img id="overlay-img"/>
+                    <button class="button" onclick="switchRight()">></button>
+                    <p id="nb-photo">dxsxs</p>
                 </div>
             </div>
         </main>
@@ -79,5 +200,6 @@
             </section>
         </footer>
         <script src="../js/verslemontafrique.js"></script>
+        <script src="../js/image.js"></script>
     </body>
 </html>
