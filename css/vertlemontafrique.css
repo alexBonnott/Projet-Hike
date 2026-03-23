@@ -341,7 +341,7 @@ footer{
 
 #overlay-img{
     max-width:100%;
-    max-height:90%;
+    max-height:100%;
     transition: transform 0.3s ease;
     cursor:pointer;
     display: block;
@@ -352,6 +352,7 @@ footer{
     display: flex;
     width: 100%;
     height: 90%;
+   
     align-items:center;
     justify-content: space-between;
 }
@@ -404,24 +405,21 @@ footer{
 
     
     #overlay div{
-       height: 40%;
+       height: 60%;
        display: block;
-       text-align: center;
-    }
-
-    #overlay-img{
-        margin-left: auto;
-        margin-right: auto;
     }
 
     #close{
-    top : 10%;
-    right: 5%;
+        top : 8%;
+        right: 10%;
     }
 
     #nb-photo{
-    position: relative;
-    color: white;
-    font-size: larger;
+        z-index: -1000;
+        position: relative;
+        color: white;
+        font-size: larger;
+        margin-left: 45%;
+        padding-top: 10%;
     }
 }
