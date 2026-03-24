@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <title>mesrandonées - Bourgogne</title>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="../css/bourgogne.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,7 +10,24 @@
     <body>
         <header>
             <nav>
-                <a href="../index.html"><img id="logo" src="../images/logo.png"></a>
+                <div id="menu-contenair">
+                    <svg id="logo-menu" width="10%" viewbox="0 0 30 35" onclick="openMenu()">
+                        <line x1="0" y1="10" x2="30" y2="10" stroke="black" stroke-width="3"></line>
+                        <line x1="0" y1="20" x2="30" y2="20" stroke="black" stroke-width="3"></line>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="black" stroke-width="3"></line>
+                    </svg>
+                    <ul id="menu-deroulant">
+                        <li onclick="openSousMenu()">Mes randonnées
+                            <ul id="sousOptionD">
+                            <li><a href="regions/bourgogne.html">Bourgogne</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="carte.html">Carte</a>
+                        </li>
+                        <li><a href="information.html">A propos</a></li>
+                    </ul>
+                </div>
+                <a href="../index.html"><img alt="logo" id="logo" src="../images/logo.png"></a>
                 <ul class="menu">
                     <li class="option">Mes randonnées
                         <ul class="sousOption">
@@ -32,11 +50,11 @@
                         <p>Distance : <b>22.7km</b></p>
                         <p>Type: <b>boucle, sportif</b></p>
                         <p>Départ / Arrivé : <b>Dijon (Combe à la Serpent)</b></p>
-                        <p>Cette randonnées en direction du mont Afrique, explore les combes Sud-Ouest de la vallée de l'ouche, les contreforts du mont Afrique, puis les plateaux de la combe à la Serpent, pour terminé par l'ascenssion du fort de la Motte-Girond.</p>
+                        <p>Cette randonnée en direction du mont Afrique explore les combes sud-ouest de la vallée de l'Ouche, les contreforts du mont Afrique, puis les plateaux de la combe à la Serpent, pour terminer par l'ascension du fort de la Motte-Girond.</p>
                         <a class="button" href="../randonees/verslemontafrique.html">Voir plus</a>
                     </div>
                     <div class="information-d">
-                        <img src="../images/valle-Ouche1.jpg">
+                        <img alt="photo-verlemontafrique" src="../images/valle-Ouche1.jpg">
                         <hr>
                         <p>Publié le 13/03/2026</p>
                     </div>
@@ -64,12 +82,13 @@
                 <div id="ligne-verticale"></div>
                 <section class="footer-section">
                     <h3>Resaux Sociaux</h3>
-                    <a><img class="logo-Resaux"src="../images/instagram.png"/>instagram</a>
+                    <a><img alt="logo-instagram" class="logo-Resaux" src="../images/instagram.png"/>instagram</a>
                 </section>
             </div>
-            <section>
+            <div>
                 <p>© 2026 RandoGo. Tous droits réservés.</p>
-            </section>
+            </div>
         </footer>
+        <script src="../js/menuderoulant.js"></script>
     </body>
 </html>

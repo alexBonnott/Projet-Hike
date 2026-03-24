@@ -28,6 +28,10 @@ nav{
     
 }
 
+#menu-contenair{
+    display: none;
+}
+
 .menu{
     width: 70%;
     font-size: x-large;
@@ -150,17 +154,29 @@ footer{
     background-color: gainsboro;
 }
 
-.logo-Resaux{
+#logo-Resaux{
     vertical-align: middle;
     width: 30px;
     height: 30px;
 }
 
-@media (max-width: 768px){
 
+@media (max-width:1024px){
+
+    .menu{
+        font-size:x-large;
+    }
+
+    #logo{
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px){
+    
     /*Header*/
     .menu{
-        font-size:smaller;
+        display: none;
     }
 
     #logo{
@@ -169,13 +185,73 @@ footer{
 
     #contenue{
         flex-direction: column;
+        
     }
+
     #text{
         order: 1;
     }
     #contenue img{
         width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 7%;
+    }
+
+    #menu-contenair{
+        position: relative;
+        display: block;
+        width: fit-content;
+    }
+
+    #logo-menu{
+        display: block;
+        padding-left: 5%;
+    }
+
+    #menu-deroulant{
+        margin-left: 5%;
+        padding: 0;
+        font-size: large;
+        position: absolute;
+        visibility: hidden;
+        display: flex;
+        top: 20px;
+        left: 0;
+        z-index: 1000;
+        text-align: center;
+        background: white;
+        flex-direction: column;
+        width: 50%;
+        transition: opacity 0.5s ease;
+        opacity: 0;
+    }
+
+    #menu-deroulant li{
+        display: block;
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    #sousOptionD{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        top:20%;
+        left: 99.5%;
+        width: 80%;
+        background-color: white;
+        text-align: center;
+        list-style: none;
+        position: absolute;
+        visibility: hidden;
+        z-index: 1000;
+        align-items: center;
+        transition: opacity 0.5s ease;
+        opacity: 0;
+    }
+
+    #logo{
+        height: 100px;
     }
 }
+

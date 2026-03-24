@@ -22,6 +22,11 @@ nav{
     justify-content: space-between;
     width: 100%;
 }
+
+#menu-contenair{
+    display: none;
+}
+
  
 #logo{
     width: 100%;
@@ -357,13 +362,10 @@ footer{
     justify-content: space-between;
 }
 
+@media (max-width:1024px){
 
-
-@media (max-width: 768px){
-
-    /*Header*/
     .menu{
-        font-size:smaller;
+        font-size:x-large;
     }
 
     #logo{
@@ -394,8 +396,8 @@ footer{
 
 
     #map{
-        width: 100%;
-        height: 200px;
+        width: 80%;
+        height: 300px;
     }
 
     .button{
@@ -405,8 +407,15 @@ footer{
 
     
     #overlay div{
-       height: 60%;
+        
+    
+       height: 100%;
        display: block;
+    }
+
+    #overlay-img{
+        margin-top: 30%;
+        display: block;
     }
 
     #close{
@@ -422,4 +431,92 @@ footer{
         margin-left: 45%;
         padding-top: 10%;
     }
+}
+
+@media (max-width: 767px){
+
+    /*Header*/
+    .menu{
+        display: none;
+    }
+
+    #logo{
+        height: 100px;
+    }
+
+
+    #map{
+        width: 100%;
+        height: 200px;
+    }
+
+
+    #overlay-img{
+        
+        margin-top: 45%;
+        display: block;
+    }
+
+    #menu-contenair{
+        position: relative;
+        display: block;
+        width: fit-content;
+    }
+
+    #logo-menu{
+        display: block;
+        padding-left: 5%;
+    }
+
+    #menu-deroulant{
+        margin-left: 5%;
+        padding: 0;
+        font-size: large;
+        position: absolute;
+        visibility: hidden;
+        display: flex;
+        top: 20px;
+        left: 0;
+        z-index: 10000;
+        text-align: center;
+        background: white;
+        flex-direction: column;
+        width: 50%;
+        transition: opacity 0.5s ease;
+        opacity: 0;
+    }
+
+    #menu-deroulant li{
+        display: block;
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    #sousOptionD{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        top:20%;
+        left: 99.5%;
+        width: 80%;
+        background-color: white;
+        text-align: center;
+        list-style: none;
+        position: absolute;
+        visibility: hidden;
+        z-index: 1000;
+        align-items: center;
+        transition: opacity 0.5s ease;
+        opacity: 0;
+    }
+}
+
+@media(max-width:430px){
+    #overlay-img{
+        
+        margin-top: 50%;
+        display: block;
+    }
+
 }

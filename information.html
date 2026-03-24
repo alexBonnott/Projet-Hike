@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8"/>
+        <title>RandoGo - A propos de moi</title>
         <link rel="stylesheet" href="css/information.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="images/png" href="images/logo.png"/>
@@ -9,7 +10,24 @@
     <body>
         <header>
             <nav>
-                <a href="index.html"><img id="logo" src="images/logo.png"></a>
+                <div id="menu-contenair">
+                    <svg id="logo-menu" width="10%" viewbox="0 0 30 35" onclick="openMenu()">
+                        <line x1="0" y1="10" x2="30" y2="10" stroke="black" stroke-width="3"></line>
+                        <line x1="0" y1="20" x2="30" y2="20" stroke="black" stroke-width="3"></line>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="black" stroke-width="3"></line>
+                    </svg>
+                    <ul id="menu-deroulant">
+                        <li onclick="openSousMenu()">Mes randonnées
+                            <ul id="sousOptionD">
+                            <li><a href="regions/bourgogne.html">Bourgogne</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="carte.html">Carte</a>
+                        </li>
+                        <li><a href="information.html">A propos</a></li>
+                    </ul>
+                </div>
+                <a href="index.html"><img alt="logo" id="logo" src="images/logo.png"></a>
                 <ul class="menu">
                     <li class="option">Mes randonnées
                         <ul class="sousOption">
@@ -27,23 +45,23 @@
             <div id="contenue">
                 <div id="texte">
                     <section>
-                        <h2>A propos de moi</h2>
-                        <p>Je m'appelle Alex Bonnot, je suis étudiant en licence informatique j'ai décidé avec se site web de relier mes deux passions l'informatique et la randonnées.<b>Passionée de randonée depuis maintenant quelques années</b>, je souhaitais partager mes aventures et mes randonnées. Je suis née en Bourgogne une région surtout connues pour ces vins et sa gastronomie. Mais la Bourgone chache aussi de belle rando dont je souhaite vous faire découvir. Entre combe, forêt, monts, plaines et champs, cette régions déborde de nature.</p>
+                        <h2>À propos de moi</h2>
+                        <p>Je m'appelle Alex Bonnot, je suis étudiant en licence informatique. J'ai décidé avec ce site web de relier mes deux passions, l'informatique et la randonnée. <b>Passionnée de randonnée depuis maintenant quelques années</b>, je souhaitais partager mes aventures et mes randonnées. Je suis né en Bourgogne, une région surtout connue pour ses vins et sa gastronomie. Mais la Bourgogne cache aussi de belles randos que je souhaite vous faire découvrir. Entre combes, forêts, monts, plaines et champs, cette région déborde de nature.</p>
                     </section>
                     <section>
                         <h2>Mon expérience</h2>
-                        <p>Je randone pour m'amuser, me sentir libre, aprécier la nature et le paysage mais aussi pour me dépasser. En Bourgogne on a pas de montagnes mais on as des combes. Ces combes sont un terrains de jeu parfait pour se qui désirent des randonées plus sportifes. Je suis moi-même un grand amateur de ces millieux naturels. Les sentiers qui me vont le plus réver sont surement ceux en montages même si je n'ai plus en avoir l'expérience jusqu'a maintenant. Ma seul expérience de treking et de millieux montageux a été la partie nord du GR20 en juillet 2025.</p>
+                        <p>Je randonne pour m'amuser, me sentir libre, apprécier la nature et le paysage mais aussi pour me dépasser. La Bourgogne  est parsemée de combes qui sont un terrain de jeu parfait pour ceux qui désirent des randonnées plus sportives. Je suis moi-même un grand amateur de ces milieux naturels. Les sentiers qui me font le plus rêver sont sûrement ceux en montagne, même si je n'ai pas encore eu l'expérience jusqu'à maintenant. Ma seule expérience de trekking et de milieux montagneux a été la partie nord du GR20 en juillet 2025.</p>
                     </section>
                     <section>
                         <h2>Objectif</h2>
-                        <p>Se site répertori les différentes randonnées que j'ai réalisé et que je souhaite partagé. Les plus part se localise en Bourgone. Sur ce site vous trouverez des randonées <b>familliale</b> et <b>sportives</b>. Vous trouverez notaments des sentiers en forêts, en montagnes, passant par des combes, des plaines et pleins d'autres millieu natureles. Vous trouverez egalement toutes les données qu'il vous faut savoir sur le sentier. A savoir point d'eau, point d'information, lieu intéressant. Ainsi que plein d'autres information concernant la cultures et la nature de la zone visitée. Vous trouverez également une <b>carte intéracives</b> répertoriant toutes les randonées que je souhaite partagé. Une carte intéractives pour chaque randonées est aussi disponible.</p>
+                        <p>Ce site répertorie les différentes randonnées que j'ai réalisées et que je souhaite partager. La plupart se localise en Bourgogne. Sur ce site vous trouverez des randonnées <b>familiale</b> et <b>sportives</b>. Vous trouverez notamment des sentiers en forêts, en montagnes, passant par des combes, des plaines et plein d'autres milieux naturels. Vous trouverez également toutes les données qu'il vous faut savoir sur le sentier. À savoir : point d'eau, point d'information, lieu intéressant. Ainsi que plein d'autres informations concernant la culture et la nature de la zone visitée. Vous trouverez par ailleurs une <b>carte interactive</b> répertoriant toutes les randonnées que je souhaite partager. Une carte interactive pour chaque randonnée est aussi disponible.</p>
                     </section>
                     <section>
                         <h2>Information</h2>
-                        <p>Mes randonnées suivent la pluspart du temps des <b>sentiers balisées</b>. Dans le cas contraire, il vous le saurat alors <b>averti</b>. Chaque trace GPX des sentiers sont <b>disponible sur le site</b>, il est vous conseillé de gardé en vue cette trace. Celle-ci peut-être importé très facilement dans des applications de randonnéese ou sur une montre conecté si vous en avez une. Certain sentier passent en forêts et donc sur des <b>zones chassées</b>, cela vous serat <b>indiquer</b> pour chaque randonées. Il vous est conseillé de toutes évidence de vous renseigné sur ce domaine.</p>
+                        <p>Mes randonnées suivent la plupart du temps des <b>sentiers balisés</b>. Dans le cas contraire, il vous le saura alors <b>indiqué</b>. Chaque trace GPX des sentiers sont <b>disponibles sur le site</b>, il vous est conseillé de garder en vue cette trace. Celle-ci peut être importée très facilement dans des applications de randonnée ou sur une montre connectée si vous en avez une. Certains sentiers passent en forêt et donc sur des <b>zones chassées</b>, cela vous sera <b>indiqué</b> pour chaque randonnée. Il vous est conseillé de toutes évidences de vous renseigner sur ce domaine.</p>
                     </section>
                 </div>
-                <img src="images/moi.jpg">
+                <img alt="image-moi" src="images/moi.jpg">
             </div>
         </main>
         <hr style="border: solid 0.01cm gainsboro;"/>
@@ -61,12 +79,13 @@
                 <div id="ligne-verticale"></div>
                 <section class="footer-section">
                     <h3>Resaux Sociaux</h3>
-                    <a><img class="logo-Resaux"src="images/instagram.png"/>instagram</a>
+                    <a><img alt="logo-instagrame" id="logo-Resaux" src="images/instagram.png"/>instagram</a>
                 </section>
             </div>
-            <section>
+            <div>
                 <p>© 2026 RandoGo. Tous droits réservés.</p>
-            </section>
+            </div>
         </footer>
+        <script src="js/menuderoulant.js"></script>
     </body>
 </html>
