@@ -17,21 +17,17 @@
     <body>
         <header>
             <nav>
-                <div id="menu-contenair">
-                    <svg id="logo-menu" width="10%" viewbox="0 0 30 35" onclick="openMenu()">
+                <div id="contenair-logo">
+                    <svg id="logo-menu-open" width="10%" viewbox="0 0 30 35" >
                         <line x1="0" y1="10" x2="30" y2="10" stroke="black" stroke-width="3"></line>
                         <line x1="0" y1="20" x2="30" y2="20" stroke="black" stroke-width="3"></line>
                         <line x1="0" y1="30" x2="30" y2="30" stroke="black" stroke-width="3"></line>
                     </svg>
-                    <ul id="menu-deroulant">
-                        <li onclick="openSousMenu()">Mes randonnées
-                            <ul id="sousOptionD">
-                                <li><a href="regions/bourgogne.html">Bourgogne</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="carte.html">Carte</a></li>
-                        <li><a href="information.html">A propos</a></li>
-                    </ul>
+                    
+                    <svg id="logo-menu-close" width="10%" viewbox="0 0 30 35" >
+                        <line x1="5" y1="5" x2="25" y2="25" stroke="black" stroke-width="3"/>
+                        <line x1="25" y1="5" x2="5" y2="25" stroke="black" stroke-width="3"/>
+                    </svg>
                 </div>
                 <a href="index.html"><img alt="logo" id="logo" src="images/logo.png"></a>
                 <ul class="menu">
@@ -46,8 +42,19 @@
                 </ul>
             </nav>
         </header>
-        <hr style="border: solid 0.01cm #2E8B57;"/>
+        <hr style="border: solid 0.01cm #2E8B57; margin-bottom: 0; padding: 0;"/>
         <main>
+            <nav>
+                <div id="menu-contenair">
+                    <ul id="menu-deroulant">
+                        <li class="optionD">Mes randonnées</li>
+                        <li class="sousOptionD"><a href="regions/bourgogne.html">Bourgogne</a></li>
+                        <li><a href="carte.html">Carte</a>
+                        </li>
+                        <li><a href="information.html">A propos</a></li>
+                    </ul>
+                </div>
+            </nav>
             <h3>Carte des sentier</h3>
             <div id="map">
 
@@ -62,13 +69,13 @@
             <div id="footer-contenair">
                 <section class="footer-section">
                     <h3>Contact</h3>
-                    <p>Email : <a href="mailto:alex@randogo.com">alex@randogo.com</a></p>
+                    <p>Email : <a href="mailto:alex.bonnot@randogo.fr">alex.bonnot@randogo.fr</a></p>
                     <p>Téléphone : 07 85 30 51 59</p>
                 </section>
                 <div id="ligne-verticale"></div>
                 <section class="footer-section">
                     <h3>Resaux Sociaux</h3>
-                    <a><img alt="logo-instagrame" class="logo-Resaux" src="images/instagram.png"/>instagram</a>
+                    <a href="https://www.instagram.com/randogooff/"><img alt="logo-instagram" class="logo-Resaux" src="../images/instagram.png"/>instagram</a>
                 </section>
             </div>
             <div>

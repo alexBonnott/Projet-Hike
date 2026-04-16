@@ -2,18 +2,32 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8"/>
-        <title>Randonnées - Vers le mont Afrique</title>
-        <link rel="stylesheet" href="../css/"/>
+        <title>Randonnées - </title>
+        <link rel="stylesheet" href="../css/vertlemontafrique.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="images/png" href="../images/logo.png"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.css" />
+        <script src="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.umd.js"></script>
         <script src="https://unpkg.com/leaflet-gpx/gpx.js"></script>
     </head>
     <body>
         <header>
             <nav>
-                <a href="../index.html"><img id="logo" src="../images/logo.png"></a>
+                <div id="contenair-logo">
+                    <svg id="logo-menu-open" width="10%" viewbox="0 0 30 35" >
+                        <line x1="0" y1="10" x2="30" y2="10" stroke="black" stroke-width="3"></line>
+                        <line x1="0" y1="20" x2="30" y2="20" stroke="black" stroke-width="3"></line>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="black" stroke-width="3"></line>
+                    </svg>
+                    
+                    <svg id="logo-menu-close" width="10%" viewbox="0 0 30 35" >
+                        <line x1="5" y1="5" x2="25" y2="25" stroke="black" stroke-width="3"/>
+                        <line x1="25" y1="5" x2="5" y2="25" stroke="black" stroke-width="3"/>
+                    </svg>
+                </div>
+                <a href="../index.html"><img alt="logo" id="logo" src="../images/logo.png"></a>
                 <ul class="menu">
                     <li class="option">Mes randonnées
                         <ul class="sousOption">
@@ -22,19 +36,80 @@
                     </li>
                     <li><a href="../carte.html">Carte</a>
                     </li>
-                    <li><a href="../information.html">A propos</a></li>
+                    <li><a href="../information.html">À propos</a></li>
                 </ul>
             </nav>
         </header>
-        <hr style="border: solid 0.01cm #2E8B57;"/>
+        <hr style="border: solid 0.01cm #2E8B57; margin-bottom: 0;"/>
         <main>
+            <nav>
+                <div id="menu-contenair">
+                    <ul id="menu-deroulant">
+                        <li class="optionD">Mes randonnées</li>
+                        <li class="sousOptionD"><a href="../regions/bourgogne.html">Bourgogne</a></li>
+                        <li><a href="../carte.html">Carte</a>
+                        </li>
+                        <li><a href="../information.html">A propos</a></li>
+                    </ul>
+                </div>
+            </nav>
             <div id="contenair">
                 <div id="content">
                     <h2></h2>
                     <hr>
-                    <p>ffddf</p>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <p>fds</p>
+                    <div id="div-images">
+
+                        <div id="image-plus">
+                            
+                            <svg id="plus" viewBox="0 0 30 30" onclick="seeMore()">
+                                <line x1="50%" y1="0" x2="50%" y2="100%" stroke="white" stroke-width="3"/>
+                                <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p></p>
+                    <section>
+                        <h3>Départ:</h3>
+                        <p></p>
+                    </section>
+                    <section>
+                        <h3>Difficulté</h3>
+                        <p>Type : <b></b></p>
+                        <p>Sens conseillé :</p>
+                        <p>Difficulté: <b></b></p>
+                        <p>Technicité : <b></b></p>
+                    </section>
+                    <section>
+                        <h3>Précautions</h3>
+                        <p>Cette randonnée suit <b>plusieurs balisages</b>, pour ne pas vous perdre, il vous est conseillé de <b>télécharger la trace GPX</b> depuis cette page, afin de la suivre grâce à un gps. Certaines montées et descentes en majeure partie dans les combes sont <b>glissantes</b> en <b>temps humide</b>, de plus certaines sections présentent du <b>vide</b>. Ce sentier passe par des <b>zones chassées</b>, il vous est conseillé d'éviter ces zones-là les jours de chasse ou de prendre toutes les précautions nécessaires.</p>
+                        <p>Pour voir les zones et jours de chasse en Bourgogne : <a href="https://www.chasseinfo.fr/">chasseInfo.fr</a></p>
+                    </section>
+                    <section>
+                        <h3>Matérielles</h3>
+                        <p>Ce sentier nécessite d'avoir des <b>chaussures de randonnée</b> à tige basse, moyenne ou haute. Des bâtons de randonée sont conseillés. Pensez à bien vous <b>hydrater</b> et à vous <b>alimenter</b>. Prévoyez <b>2</b> jusqu'à <b>2.5</b> littres d'eau en hiver et <b>3</b> à <b>3.5</b> littres en été (<b>par personne</b>). Privilégier des aliments <b>sucrés</b>, des <b>fruits</b> ou des <b>barres énergétiques</b>. Des <b>tables de picnic</b> sont présentes sur le parcours et vous sont indiquées dans la description des étapes du parcours.</p>
+                    </section>
+                    <div>
+                        <section id="partie1">
+                            <hr>
+                            <h3>Etape 1</h3>
+                            <p>Balisage : <b></b></p>
+                            <p></p>
+                            <div class="contenair-image">
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        <section id="partie2">
+                            <hr>
+                            <h3>Etape 2</h3>
+                            <p>Balisage : <span class="b1"></span></p>
+                            <div class="contenair-image">
+                                <div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
                 <div id="informations">
                     <div id="map">
@@ -43,16 +118,28 @@
                     <hr>
                     <div id="contenair2">
                         <div>
-                            <p>Distance : km</p>
-                            <p>Dénivelé positif : m↑</p>
-                            <p>Dénivelé négatif : m↓</p>
-                            <p>Balsisage : <span id="b1"></span>, <span id="b2"></span></p>
+                            <p>Distance : </p>
+                            <p>Dénivelé positif : </p>
+                            <p>Dénivelé négatif : </p>
+                            <p>Balsisage : <span class="b1">rouge</span>, <span class="b1">rouge</span> et <span class="b2">jaune</span>, <span class="b3">croix blanche</span>,  <span class="b1">rouge</span></p>
                         </div>
                         <div id="gpx">
                             <p>Trace gpx:</p>
                             <a id="lien_gpx">Télégarger</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="overlay">
+                <svg id="close" width="30" height="30" viewBox="0 0 30 30" onclick="closeImg()">
+                    <line x1="0" y1="0" x2="30" y2="30" stroke="white" stroke-width="2"/>
+                    <line x1="30" y1="0" x2="0" y2="30" stroke="white" stroke-width="2"/>
+                </svg>
+                <div>
+                    <button class="button" onclick="switchLeft()"> &lt </button>
+                    <img alt="image-overlay" id="overlay-img"/>
+                    <button class="button" onclick="switchRight()">></button>
+                    <p id="nb-photo">dxsxs</p>
                 </div>
             </div>
         </main>
@@ -65,19 +152,21 @@
             <div id="footer-contenair">
                 <section class="footer-section">
                     <h3>Contact</h3>
-                    <p>Email : <a href="mailto:alex@randogo.com">alex@randogo.com</a></p>
+                    <p>Email : <a href="mailto:alex.bonnot@randogo.fr">alex.bonnot@randogo.fr</a></p>
                     <p>Téléphone : 07 85 30 51 59</p>
                 </section>
                 <div id="ligne-verticale"></div>
                 <section class="footer-section">
                     <h3>Resaux Sociaux</h3>
-                    <a><img class="logo-Resaux"src="../images/instagram.png"/>instagram</a>
+                    <a href="https://www.instagram.com/randogooff/"><img alt="logo-instagram" class="logo-Resaux" src="../images/instagram.png"/>instagram</a>
                 </section>
             </div>
-            <section>
+            <div>
                 <p>© 2026 RandoGo. Tous droits réservés.</p>
-            </section>
+            </div>
         </footer>
-        <script src="../js/"></script>
+        <script src="../js/verslemontafrique.js"></script>
+        <script src="../js/image.js"></script>
+        <script src="../js/menuderoulant.js"></script>
     </body>
 </html>

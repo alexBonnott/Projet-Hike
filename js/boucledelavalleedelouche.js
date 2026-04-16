@@ -37,7 +37,6 @@
 
         //Ajout de parcour gpx
 
-
         new L.GPX("../gpx/boucledelavalleedelouche.gpx", {
             async: true,
             polyline_options: {
@@ -49,6 +48,19 @@
             }
         }).addTo(map);
 
+        //Ajout variante
+
+        new L.GPX("../gpx/variantevalleedelouche.gpx", {
+            async: true,
+            polyline_options: {
+            color: "red",
+            },
+            markers:{
+                startIcon : null,
+                endIcon : null
+            }
+        }).addTo(map);
+        
     //Ajout des calques à la carte
     
     const points = [
@@ -56,8 +68,11 @@
     {latLng : [47.326189, 4.983282], icon : 2},
     {latLng : [47.333288, 4.971143], icon : 3},
     {latLng : [47.31949126678269, 4.935713661938761], icon : 4},
-    {latLng : [47.300168, 4.926502], icon : 5},
-    {latLng : [47.30878553955885, 4.97198479857517], icon : 6}
+    {latLng : [47.307642, 4.919952], icon : 5},
+    {latLng : [47.317318, 4.912805], icon : 6},
+    {latLng : [47.330467, 4.923389], icon : 7},
+    {latLng : [47.341897, 4.975265], icon : 8},
+    {latLng : [47.324137, 4.999859], icon : 9}
     ];
 
     points.forEach(p =>{

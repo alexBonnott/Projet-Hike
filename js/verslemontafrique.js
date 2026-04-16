@@ -38,7 +38,7 @@
         //Ajout de parcour gpx
 
 
-        new L.GPX("../gpx/vers_le_mont_afrique.gpx", {
+        new L.GPX("../gpx/verslemontafrique.gpx", {
             async: true,
             polyline_options: {
             color: "blue",
@@ -127,22 +127,22 @@
     let startX = 0;
 
     document.getElementById("overlay").addEventListener("touchstart", e => {
-    startX = e.touches[0].clientX;
+        startX = e.touches[0].clientX;
     });
 
     document.getElementById("overlay").addEventListener("touchend", e => {
-    let endX = e.changedTouches[0].clientX;
+        let endX = e.changedTouches[0].clientX;
 
-    if (startX - endX > 50) {
-        // swipe gauche → image suivante
-        index++;
-        if (index >= images.length) index = 0;
-    } else if (endX - startX > 50) {
-        // swipe droite → image précédente
-        index--;
-        if (index < 0) index = images.length - 1;
-    }
+        if (startX - endX > 50) {
+            // swipe gauche → image suivante
+            index++;
+            if (index >= images.length) index = 0;
+        } else if (endX - startX > 50) {
+            // swipe droite → image précédente
+            index--;
+            if (index < 0) index = images.length - 1;
+        }
 
-    img.src = images[index];
-    showImage();
+        img.src = images[index];
+        showImage();
     });

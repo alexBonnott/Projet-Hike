@@ -108,7 +108,7 @@ header a{
 
 
 #contenair{
-    height: 550px;
+    height: 600px;
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -118,9 +118,10 @@ header a{
 
 #contenair2{
     font-size: large;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -133,6 +134,10 @@ header a{
     padding: 5px;
     border-radius: 5%;
     transition: background-color 0.3s ease;
+}
+
+#gpx p{
+        margin-top: 0;
 }
 
 #lien_gpx:hover{
@@ -311,7 +316,7 @@ footer{
     top:0;
     left:0;
     width:100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0,0,0,0.8);
     display:none;
     align-items: center;
@@ -362,7 +367,62 @@ footer{
     justify-content: space-between;
 }
 
-@media (max-width:1024px){
+main{
+    position: relative;
+    
+}
+
+#contenair-logo{
+    display: none;
+    position: relative;
+}
+
+@media (max-width:1439px){
+    .button{
+        display: none;
+
+    }
+
+    #overlay{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #overlay div{
+        width: 100%;
+        margin-top: 5%;
+       text-align: center;
+       display: block;
+       max-height: 70%;
+       
+    }
+
+    #overlay-img{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+
+    #close{
+        top : 8%;
+        right: 10%;
+    }
+
+    #nb-photo{
+        z-index: -10000;
+        margin-top: 5%;
+        color: white;
+        font-size: larger;
+        position: relative;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width:1023px){
 
     .menu{
         font-size:x-large;
@@ -400,37 +460,6 @@ footer{
         height: 300px;
     }
 
-    .button{
-        display: none;
-
-    }
-
-    
-    #overlay div{
-        
-    
-       height: 100%;
-       display: block;
-    }
-
-    #overlay-img{
-        margin-top: 30%;
-        display: block;
-    }
-
-    #close{
-        top : 8%;
-        right: 10%;
-    }
-
-    #nb-photo{
-        z-index: -1000;
-        position: relative;
-        color: white;
-        font-size: larger;
-        margin-left: 45%;
-        padding-top: 10%;
-    }
 }
 
 @media (max-width: 767px){
@@ -440,83 +469,161 @@ footer{
         display: none;
     }
 
+    footer{
+        font-size: smaller;
+    }
+
+    #content{
+        font-size: large;
+    }
+
     #logo{
         height: 100px;
     }
 
+    #contenair2{
+        font-size: large;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
 
+    
     #map{
         width: 100%;
         height: 200px;
     }
 
 
+    #overlay{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #overlay div{
+
+       text-align: center;
+       display: block;
+
+       
+    }
+
     #overlay-img{
-        
-        margin-top: 45%;
         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
     }
 
-    #menu-contenair{
+
+    #close{
+        top : 8%;
+        right: 10%;
+    }
+
+    #nb-photo{
+        z-index: -10000;
+        margin-top: 10%;
+        color: white;
+        font-size: larger;
         position: relative;
-        display: block;
-        width: fit-content;
+        margin-left: 15%;
     }
 
-    #logo-menu{
+     #menu-contenair{
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        top: 0;
+        left: 0;
+        position: absolute;
+        visibility: hidden;
         display: block;
-        padding-left: 5%;
+        width: 70%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #contenair-logo{
+        display: block;
+    }
+
+    #logo-menu-open{
+        display: block;
+        padding-left: 9%;
+        transform-origin: 80% 80%;
+        opacity: 1;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    #logo-menu-close{
+        position: absolute;
+        visibility: hidden;
+        top: 5px;
+        left: 9%;
+    }
+
+    #logo-menu-open.open{
+        transform: rotate(380deg);
+        opacity: 0;
     }
 
     #menu-deroulant{
-        margin-left: 5%;
-        padding: 0;
-        font-size: large;
-        position: absolute;
+        
+        background-color: rgb(245, 243, 243);
+        margin-top: 0;
+        padding-left: 0;
+        width: 60%;
+        height: 13%;
+        border-bottom-right-radius: 15%;
+        list-style: none;
         visibility: hidden;
-        display: flex;
-        top: 20px;
-        left: 0;
+        position: absolute;
         z-index: 10000;
-        text-align: center;
-        background: white;
-        flex-direction: column;
-        width: 50%;
-        transition: opacity 0.5s ease;
         opacity: 0;
+        transition: opacity 0.5s ease;
     }
 
+    #menu-deroulant a{
+        text-decoration: none;
+        color: black;
+    }
+    
     #menu-deroulant li{
-        display: block;
-        padding: 10px;
+        padding-top: 20px;
+        background: rgb(245, 243, 243);
         border: 1px solid black;
         border-collapse: collapse;
+        padding-bottom: 20px;
+        border-top: hidden;
+    }
+    
+    #menu-deroulant li.sousOptionD{
+        background: white;
+        display: none;
     }
 
-    #sousOptionD{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        top:20%;
-        left: 99.5%;
-        width: 80%;
-        background-color: white;
-        text-align: center;
-        list-style: none;
-        position: absolute;
-        visibility: hidden;
-        z-index: 1000;
-        align-items: center;
-        transition: opacity 0.5s ease;
-        opacity: 0;
+    .optionD::after{
+    content: '▿';
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.5s ease;
     }
+
+    .optionD.open::after{
+        transform: rotate(180deg);
+    }
+
 }
 
+
 @media(max-width:430px){
+
     #overlay-img{
-        
-        margin-top: 50%;
-        display: block;
+       margin-top: 0%;
     }
 
+    #overlay div{
+        height: 50%;
+    }
 }

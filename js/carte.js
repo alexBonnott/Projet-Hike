@@ -1,5 +1,7 @@
 
+        
         // L'id du container, par exemple <div id="map"></div>
+
         var map = L.map('map').setView([47.319215, 5.041470], 10);
 		
         // Plan IGN avec une transparence de 50%
@@ -17,15 +19,16 @@
         });
 
         planIGN.addTo(map);
-		
+
 		var streetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             {
                 attribution: '&copy; OpenStreetMap'
             });
-
+        
         var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles © Esri'
         });
+
 
         var baseMaps = {
             "PlanIgn": planIGN,
@@ -33,21 +36,31 @@
             "Satellite" : satellite
         };
 
+
         //Ajout de parcour gpx
 
-        const sentier = [
-        {
-            nom : "Vers le mont Afrique",
-            gpx : "../gpx/vers_le_mont_afrique.gpx",
-            distance: "22.7",
-            denivele_p: "830",
-            denivele_n: "840",
-            page: "../randonees/verslemontafrique.html",
-            color: "blue"
+        class Sentier{
+            constructor(nom, gpx, distance, denivele_p, denivele_n, page, color){
+                this.nom = nom;
+                this.distance = distance;
+                this.gpx = gpx;
+                this.denivele_p = denivele_p; this.denivele_n = denivele_n;
+                this.page = page;
+                this.color = color;
+            }
         }
+
+        
+        const lSentier = [
+            new Sentier("Vers le mont Afrique", "../gpx/verslemontafrique.gpx", 22.7, 830, 
+                840, "../randonees/verslemontafrique.html", "blue"),
+            new Sentier("Boucle de la vallée de l'ouche", "../gpx/boucledelavalleedelouche.gpx", 
+                29, 1158, 1178, "../randonees/boucledelavalleedelouche.html", "red")
         ];
 
-        sentier.forEach(function(s){
+        //Affichage sur la carte
+
+        lSentier.forEach(function(s){
             new L.GPX(s.gpx, {
             async: true,
             polyline_options: {
@@ -81,11 +94,13 @@
     //Ajout des calques à la carte
     L.control.layers(baseMaps).addTo(map);
     map.addControl(new L.Control.FullScreen());
-    
+     
+    //Ajout de la fonction de recherche de localisation
     var geocoder = L.Control.geocoder({
     defaultMarkGeocode: false,
     placeholder: "Rechercher une ville..."
     }).addTo(map);
+    
 
     geocoder.on('markgeocode', function(e) {
     var bbox = e.geocode.bbox;
