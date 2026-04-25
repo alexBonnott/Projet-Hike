@@ -42,6 +42,46 @@ nav{
     justify-content:flex-end;
 }
 
+#loupe{
+    padding-right: 10px;
+    transition: 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+#contenair-barre{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    
+}
+
+#resultat{
+        text-align: center;
+        padding: 100px;
+}
+    
+#barreR{
+    width: 40%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: solid 1px black;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+#contenair-barre:focus-within #barreR{
+    width: 45%;
+    box-shadow: 0 0 10px #2E8B57;
+}
+
+#contenair-barre:focus-within #loupe{
+    width: 60px;
+    height: 60px;
+}
+
 .option{
     text-align: center;
     position: relative;
@@ -226,7 +266,7 @@ main{
         margin-bottom: 30px;
     }
 
-    .randonnees{
+    #randonnees{
         margin:20px;
     }
 
@@ -265,7 +305,8 @@ main{
         margin-bottom: 10px;
     }
 
-    .randonnees{
+    #randonnees{
+        
         font-size: smaller;
         margin:15px;
     }
@@ -278,6 +319,12 @@ main{
         margin-top: 5%;
         order: 2;
     }
+
+    #barreR{
+    font-size: 10px;
+
+    }
+
 
     .button{
         display: block;

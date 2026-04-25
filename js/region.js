@@ -8,7 +8,9 @@ const filtre = lSentiers.filter(s => s.region === region);
 
 const element = document.getElementById("randonnees");
 
-filtre.forEach(s => {
+function affichage(sentiers){
+    element.innerHTML = "";
+    sentiers.forEach(s => {
     element.innerHTML += `
                 <div class="contenair">
                     <div class="information-g">
@@ -29,3 +31,24 @@ filtre.forEach(s => {
                 </div>
                 <hr style="border: solid 0.01cm green;">`;
 });
+}
+
+affichage(filtre);
+
+const recherche = document.getElementById("barreR");
+
+recherche.addEventListener("input", ()=>{
+    const texte = recherche.value.toLowerCase();
+    const resultat = filtre.filter(s => s.nom.toLowerCase().includes(texte) ||
+                                           s.depart.toLowerCase().includes(texte) ||
+                                           s.arrivee.toLowerCase().includes(texte) 
+    );
+    if(resultat.length == 0){
+        element.innerHTML = `<div id="resultat">
+                                <h1>Aucun résutlat</h1>
+                            </div>`;
+    }
+    else{
+        affichage(resultat);
+    }
+})
