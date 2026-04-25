@@ -1,0 +1,52 @@
+[
+    { 
+        "nom" : "Vers Notre-Dame d'Etang", 
+        "region" : "bourgogne",
+        "type" : "sportif, boucle",
+        "depart" : "Dijon (parking de la combe à la Serpent)",
+        "arrivee" : "Dijon (parking de la combe à la Serpent)",
+        "datePub" : "",
+        "description" : "",
+        "gpx" : "../gpx/versnotredamedetang/versnotredamedetang.gpx",
+        "distance" : 23.4,
+        "denivele_p" : 1098,
+        "denivele_n" : 1087,
+        "page" : "../randonees/versnotredamedetang.html",
+        "couleur" : "orange",
+        "image" : "../images/valleeouche/image6.jpg"
+    },
+    { 
+        "nom" : "Boucle de la vallée de l'Ouche", 
+        "region" : "bourgogne",
+        "type" : "sportif, boucle",
+        "depart" : "Dijon (parking de la combe à la Serpent)",
+        "arrivee" : "Dijon (parking de la combe à la Serpent)",
+        "datePub" : "16/04/2026",
+        "description" : "Cette randonnée fait le tour de la vallée de l’Ouche en passant par ses combes sud et nord. Cet itinéraire est très sportif et offrira un véritable défi aux randonneurs les plus aguerris.",
+        "gpx" : "../gpx/valleedelouche/valleedelouche.gpx",
+        "distance" : 29,
+        "denivele_p" : 1158,
+        "denivele_n" : 1178,
+        "page" : "../randonees/boucledelavalleedelouche.html",
+        "couleur" : "red",
+        "image" : "../images/valleeouche/image6.jpg"
+        
+    },
+    { 
+        "nom" : "Vers le mont Afrique", 
+        "region" : "bourgogne",
+        "type" : "sportif, boucle",
+        "depart" : "Dijon (parking de la combe à la Serpent)",
+        "arrivee" : "Dijon (parking de la combe à la Serpent)",
+        "datePub" : "12/03/2026",
+        "description" : "Cette randonnée en direction du mont Afrique explore les combes sud de la vallée de l’Ouche, les contreforts du mont Afrique, puis les plateaux de la combe à la Serpent, avant de se terminer par l’ascension du fort de la Motte-Giron.",
+        "gpx" : "../gpx/verslemontafrique/verslemontafrique.gpx",
+        "distance" : 22.5,
+        "denivele_p" : 830,
+        "denivele_n" : 840,
+        "page" : "../randonees/verslemontafrique.html",
+        "couleur" : "blue",
+        "image" : "../images/verslemontafrique/image5.jpg"
+    }
+
+]

@@ -82,6 +82,9 @@ nav{
     opacity: 1;
 }
 
+.randonee h3{
+    height: 30px;
+}
 .sousOption li{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -155,6 +158,7 @@ header a{
     left: 5%;
     display: flex;  
     padding: 0;
+
 }
 
 .datePubl{
@@ -165,16 +169,14 @@ header a{
 
 
 .textInfo li{
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: red;
+    font-size: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 3px;
     padding-bottom: 3px;
     border: 1px hidden gainsboro ;     
-    margin-left: 10px;
-}
-
-#info11, #info12, #info13{
-    background-color: red;
+    margin-left: 10%;
 }
 
 .container{
@@ -263,7 +265,7 @@ main{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 760px){
 
     /*Header*/
     .menu{
@@ -367,16 +369,48 @@ main{
         margin-right: 3%;
     }
 
-    .textInfo{
-        left: 0%;
-    }
 
     .textInfo li{
         padding: 3%;
-        margin-left: 2%;
+        margin-left: 10%;
     }
     
     .randonee{
         width: 47%;
         }
+}
+
+@media (max-width: 460px){
+
+
+
+    .textInfo li{
+    background-color: red;
+    font-size: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px hidden gainsboro ;     
+    margin-left: 3%;
+    }
+
+    .datePubl{
+        margin-left: 50%;
+    }
+}
+
+
+@media (max-width: 400px){
+
+
+
+    .textInfo li{
+    font-size: 80%;
+    
+    }
+
+    .datePubl{
+        margin-left: 50%;
+    }
 }

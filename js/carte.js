@@ -1,5 +1,4 @@
 
-        
         // L'id du container, par exemple <div id="map"></div>
 
         var map = L.map('map').setView([47.319215, 5.041470], 10);
@@ -36,35 +35,18 @@
             "Satellite" : satellite
         };
 
+        //Chargement du fichier json
 
-        //Ajout de parcour gpx
-
-        class Sentier{
-            constructor(nom, gpx, distance, denivele_p, denivele_n, page, color){
-                this.nom = nom;
-                this.distance = distance;
-                this.gpx = gpx;
-                this.denivele_p = denivele_p; this.denivele_n = denivele_n;
-                this.page = page;
-                this.color = color;
-            }
-        }
-
-        
-        const lSentier = [
-            new Sentier("Vers le mont Afrique", "../gpx/verslemontafrique.gpx", 22.7, 830, 
-                840, "../randonees/verslemontafrique.html", "blue"),
-            new Sentier("Boucle de la vallée de l'ouche", "../gpx/boucledelavalleedelouche.gpx", 
-                29, 1158, 1178, "../randonees/boucledelavalleedelouche.html", "red")
-        ];
+        const response = await fetch('../json/sentiers.json');
+        const lSentiers = await response.json();
 
         //Affichage sur la carte
 
-        lSentier.forEach(function(s){
+        lSentiers.forEach(function(s){
             new L.GPX(s.gpx, {
             async: true,
             polyline_options: {
-            color: s.color
+            color: s.couleur,
             },
             markers:{
                 startIcon: null,

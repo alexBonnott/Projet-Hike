@@ -38,7 +38,7 @@
         //Ajout de parcour gpx
 
 
-        new L.GPX("../gpx/verslemontafrique.gpx", {
+        new L.GPX("../gpx/versnotredamedetang/versnotredamedetang.gpx", {
             async: true,
             polyline_options: {
             color: "blue",
@@ -48,16 +48,30 @@
                 endIcon : null
             }
         }).addTo(map);
+        
+        //Ajout variante
 
+        new L.GPX("../gpx/versnotredamedetang/cheminvarianteversnotrededamedetang.gpx", {
+            async: true,
+            polyline_options: {
+            color: "red",
+            },
+            markers:{
+                startIcon : null,
+                endIcon : null
+            }
+        }).addTo(map);
     //Ajout des calques à la carte
     
     const points = [
-    {latLng : [47.321565, 4.982513], icon : 1},
-    {latLng : [47.326189, 4.983282], icon : 2},
-    {latLng : [47.333288, 4.971143], icon : 3},
-    {latLng : [47.31949126678269, 4.935713661938761], icon : 4},
-    {latLng : [47.300168, 4.926502], icon : 5},
-    {latLng : [47.30878553955885, 4.97198479857517], icon : 6}
+    {latLng : [47.321390, 4.981930], icon : 1},
+    {latLng : [47.302913, 4.947741], icon : 2},
+    {latLng : [47.293492, 4.932720], icon : 3},
+    {latLng : [47.293064, 4.924372], icon : 4},
+    {latLng : [47.296436, 4.901381], icon : 5},
+    {latLng : [47.316378, 4.912402], icon : 6},
+    {latLng : [47.333482, 4.970607], icon : 7},
+    {latLng : [47.324372, 4.986033], icon : 8}
     ];
 
     points.forEach(p =>{
@@ -76,13 +90,8 @@
     const nbPhoto = 5;
 
     const images = [
-        "../images/verslemontafrique/image1.jpg",
-        "../images/verslemontafrique/image2.jpg",
-        "../images/verslemontafrique/image3.jpg",
-        "../images/verslemontafrique/image4.jpg",
-        "../images/verslemontafrique/image5.jpg",
-        "../images/verslemontafrique/image6.jpg",
-        '../images/verslemontafrique/image7.jpg'
+        "../image/boucledelavalleedelouche/image1.jpg",
+        "../image/boucledelavalleedelouche/image2.jpg",
     ]
 
     let index = 0;

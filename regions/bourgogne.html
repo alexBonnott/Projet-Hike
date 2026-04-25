@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="images/png" href="../images/logo.png"/>
     </head>
-    <body>
+    <body data-region="bourgogne">
         <header>
             <nav>
                 <div id="contenair-logo">
@@ -48,40 +48,8 @@
                     </ul>
                 </div>
             </nav>
-            <div class="randonnees">
-                <div class="contenair">
-                    <div class="information-g">
-                        <h2>Vers le mont Afrique</h2>
-                        <hr>
-                        <p>Distance : <b>22.7km</b></p>
-                        <p>Type: <b>boucle, sportif</b></p>
-                        <p>Départ / Arrivé : <b>Dijon (parking combe à la Serpent)</b></p>
-                        <p>Cette randonnée en direction du mont Afrique explore les combes sud de la vallée de l’Ouche, les contreforts du mont Afrique, puis les plateaux de la combe à la Serpent, avant de se terminer par l’ascension du fort de la Motte-Giron.</p>
-                        <a class="button" href="../randonees/verslemontafrique.html">Voir plus</a>
-                    </div>
-                    <div class="information-d">
-                        <img alt="photo-verlemontafrique" src="../images/verslemontafrique/image5.jpg">
-                        <hr>
-                        <p>Publié le 13/03/2026</p>
-                    </div>
-                </div>
-                <hr style="border: solid 0.01cm green;">
-                <div class="contenair">
-                    <div class="information-g">
-                        <h2>Tour de la vallée de l'Ouche</h2>
-                        <hr>
-                        <p>Distance : <b>29 km</b></p>
-                        <p>Type: <b>boucle, sportif +</b></p>
-                        <p>Départ / Arrivé : <b>Dijon (parking combe à la Serpent)</b></p>
-                        <p>Cette randonnée fait le tour de la vallée de l’Ouche en passant par ses combes sud et nord. Cet itinéraire est très sportif et offrira un véritable défi aux randonneurs les plus aguerris.</p>
-                        <a class="button" href="../randonees/boucledelavalleedelouche.html">Voir plus</a>
-                    </div>
-                    <div class="information-d">
-                        <img alt="photo-verlemontafrique" src="../images/valleeouche/image6.jpg">
-                        <hr>
-                        <p>Publié le 16/04/2026</p>
-                    </div>
-                </div>
+            <div id="randonnees">
+            
             </div>
             <div id="bas-page">
                 <a class="button-page">1</a>
@@ -110,6 +78,7 @@
                 <p>© 2026 RandoGo. Tous droits réservés.</p>
             </div>
         </footer>
-        <script src="../js/menuderoulant.js"></script>
+        <script src="../js/fonction/menuderoulant.js"></script>
+        <script type="module" src="../js/region.js"></script>
     </body>
 </html>

@@ -16,20 +16,6 @@ header {
 
 }
 
-#bouttonVar{
-    color: black;
-    font-size: smaller;
-    text-decoration: none;
-    padding: 4px;
-    border: 1px solid black;
-    border-radius: 5px;
-    transition: background-color 0.5s ease;
-}
-
-#buttonVar:hover{
-    background-color: gainsboro;
-}
-
 nav{
     align-items: center;
     display: flex;
