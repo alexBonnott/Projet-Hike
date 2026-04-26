@@ -37,7 +37,7 @@
 
         //Ajout de parcour gpx
 
-        new L.GPX("../gpx/valleedelouche/valleedelouche.gpx", {
+        new L.GPX("../../gpx/valleedelouche/valleedelouche.gpx", {
             async: true,
             polyline_options: {
             color: "blue",
@@ -50,7 +50,7 @@
 
         //Ajout variante
 
-        new L.GPX("../gpx/valleedelouche/cheminvariantevalleedelouche.gpx", {
+        new L.GPX("../../gpx/valleedelouche/cheminvariantevalleedelouche.gpx", {
             async: true,
             polyline_options: {
             color: "red",
@@ -91,12 +91,12 @@
     const nbPhoto = 5;
 
     const images = [
-        "../images/valleeouche/image1.jpg",
-        "../images/valleeouche/image2.jpg",
-        "../images/valleeouche/image3.jpg",
-        "../images/valleeouche/image4.jpg",
-        "../images/valleeouche/image5.jpg",
-        "../images/valleeouche/image6.jpg",
+        "../../images/valleeouche/image1.jpg",
+        "../../images/valleeouche/image2.jpg",
+        "../../images/valleeouche/image3.jpg",
+        "../../images/valleeouche/image4.jpg",
+        "../../images/valleeouche/image5.jpg",
+        "../../images/valleeouche/image6.jpg",
     ]
 
     let index = 0;

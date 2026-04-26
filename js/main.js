@@ -1,7 +1,10 @@
 const response = await fetch('../json/sentiers.json');
 const lSentiers = await response.json();
 
+document.getElementById("topText").innerHTML += `<p>Dernier ajout : ${lSentiers[0].datePub}</p>`;
+
 const element = document.getElementById("positionRando");
+
 
 for(let i = 0; i < 3; i++){
     const s = lSentiers[i];

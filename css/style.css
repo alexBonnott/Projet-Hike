@@ -129,10 +129,12 @@ header a{
     display: flex;
     flex-wrap: wrap;
 }
+
 #topText{
     align-items: center;
     display: flex;
 }
+
 #topText p{
     margin-left: 10px;
 }
@@ -155,7 +157,7 @@ header a{
     color: azure;
     margin-top: 0;
     top: 10%;                
-    left: 5%;
+    left: 0;
     display: flex;  
     padding: 0;
 

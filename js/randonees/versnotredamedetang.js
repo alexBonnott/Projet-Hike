@@ -38,7 +38,7 @@
         //Ajout de parcour gpx
 
 
-        new L.GPX("../gpx/versnotredamedetang/versnotredamedetang.gpx", {
+        new L.GPX("../../gpx/versnotredamedetang/versnotredamedetang.gpx", {
             async: true,
             polyline_options: {
             color: "blue",
@@ -51,7 +51,7 @@
         
         //Ajout variante
 
-        new L.GPX("../gpx/versnotredamedetang/cheminvarianteversnotrededamedetang.gpx", {
+        new L.GPX("../../gpx/versnotredamedetang/cheminvarianteversnotrededamedetang.gpx", {
             async: true,
             polyline_options: {
             color: "red",

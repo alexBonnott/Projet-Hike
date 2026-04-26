@@ -38,7 +38,7 @@
         //Ajout de parcour gpx
 
 
-        new L.GPX("../gpx/verslemontafrique/verslemontafrique.gpx", {
+        new L.GPX("../../gpx/verslemontafrique/verslemontafrique.gpx", {
             async: true,
             polyline_options: {
             color: "blue",
@@ -51,7 +51,7 @@
 
         //Ajout variante
 
-        new L.GPX("../gpx/verslemontafrique/cheminvarianteverslemontafrique.gpx", {
+        new L.GPX("../../gpx/verslemontafrique/cheminvarianteverslemontafrique.gpx", {
             async: true,
             polyline_options: {
             color: "red",
@@ -89,15 +89,15 @@
     const nbPhoto = 9;
 
     const images = [
-        "../images/verslemontafrique/image1.jpg",
-        "../images/verslemontafrique/image2.jpg",
-        "../images/verslemontafrique/image3.jpg",
-        "../images/verslemontafrique/image4.jpg",
-        "../images/verslemontafrique/image5.jpg",
-        "../images/verslemontafrique/image6.jpg",
-        '../images/verslemontafrique/image7.jpg',
-        "../images/verslemontafrique/image8.jpg",
-        "../images/verslemontafrique/image9.jpg"
+        "../../images/verslemontafrique/image1.jpg",
+        "../../images/verslemontafrique/image2.jpg",
+        "../../images/verslemontafrique/image3.jpg",
+        "../../images/verslemontafrique/image4.jpg",
+        "../../images/verslemontafrique/image5.jpg",
+        "../../images/verslemontafrique/image6.jpg",
+        '../../images/verslemontafrique/image7.jpg',
+        "../../images/verslemontafrique/image8.jpg",
+        "../../images/verslemontafrique/image9.jpg"
     ] 
 
     let index = 0;

@@ -127,7 +127,7 @@ header a{
 }
 
 
-#lien_gpx{
+.lien_gpx{
     text-decoration: none;
     color: black;
     border: solid 1px black;

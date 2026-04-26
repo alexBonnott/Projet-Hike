@@ -16,7 +16,7 @@ function affichage(sentiers){
                     <div class="information-g">
                         <h2>${s.nom}</h2>
                         <hr>
-                        <p>Distance : <b>${s.distance}</b></p>
+                        <p>Distance : <b>${s.distance} km</b></p>
                         <p>Type: <b>${s.type}</b></p>
                         <p>Départ: <b>${s.depart}</b></p>
                         <p>Arrivée : <b>${s.arrivee}</b></p>
