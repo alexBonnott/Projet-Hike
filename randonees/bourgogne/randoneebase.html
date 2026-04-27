@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Randonnées - </title>
-        <link rel="stylesheet" href="../../css/"/>
+        <link rel="stylesheet" href="../../css/sentier.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="images/png" href="../../images/logo.png"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
@@ -58,10 +58,10 @@
                     <h2></h2>
                     <hr>
                     <div id="div-images">
-
+                        <div id="suite-images">
+                        </div>
                         <div id="image-plus">
-                            
-                            <svg id="plus" viewBox="0 0 30 30" onclick="seeMore()">
+                            <svg id="plus" viewBox="0 0 30 30">
                                 <line x1="50%" y1="0" x2="50%" y2="100%" stroke="white" stroke-width="3"/>
                                 <line x1="0" y1="50%" x2="100%" y2="50%" stroke="white" stroke-width="3"/>
                             </svg>
@@ -132,14 +132,14 @@
                 </div>
             </div>
             <div id="overlay">
-                <svg id="close" width="30" height="30" viewBox="0 0 30 30" onclick="closeImg()">
+                <svg id="close" width="30" height="30" viewBox="0 0 30 30">
                     <line x1="0" y1="0" x2="30" y2="30" stroke="white" stroke-width="2"/>
                     <line x1="30" y1="0" x2="0" y2="30" stroke="white" stroke-width="2"/>
                 </svg>
                 <div>
-                    <button class="button" onclick="switchLeft()"> &lt </button>
+                    <button id="buttonLeft"> &lt </button>
                     <img alt="image-overlay" id="overlay-img"/>
-                    <button class="button" onclick="switchRight()">></button>
+                    <button id="buttonRight">></button>
                     <p id="nb-photo">dxsxs</p>
                 </div>
             </div>

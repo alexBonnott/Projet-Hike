@@ -5,7 +5,7 @@
         "type" : "sportif, boucle",
         "depart" : "Dijon (parking de la combe à la Serpent)",
         "arrivee" : "Dijon (parking de la combe à la Serpent)",
-        "datePub" : "",
+        "datePub" : "26/04/2026",
         "description" : "Cette randonnée en direction de la chapelle Notre-Dame d’Étang passe par les plateaux de la Combe à la Serpent, le mont Afrique, la montagne d’Étang ainsi que les combes sud de la vallée de l’Ouche. Cet itinéraire est très sportif et offrira un véritable défi aux randonneurs les plus aguerris.",
         "gpx" : "../../gpx/versnotredamedetang/versnotredamedetang.gpx",
         "distance" : 23.5,
@@ -13,7 +13,26 @@
         "denivele_n" : 1087,
         "page" : "../randonees/bourgogne/versnotredamedetang.html",
         "couleur" : "orange",
-        "image" : "../../../images/valleeouche/image6.jpg"
+        "image" : "../../../images/valleeouche/image6.jpg",
+        "lImages" : [
+        "../../images/verslemontafrique/image1.jpg",
+        "../../images/verslemontafrique/image2.jpg",
+        "../../images/verslemontafrique/image3.jpg",
+        "../../images/verslemontafrique/image4.jpg",
+        "../../images/verslemontafrique/image5.jpg",
+        "../../images/verslemontafrique/image6.jpg",
+        "../../images/verslemontafrique/image7.jpg",
+        "../../images/verslemontafrique/image8.jpg",
+        "../../images/verslemontafrique/image9.jpg"
+        ],
+        "points" : [
+            {"latLng" : [47.321565, 4.982513], "icon" : 1},
+            {"latLng" : [47.326189, 4.983282], "icon" : 2},
+            {"latLng" : [47.333288, 4.971143], "icon" : 3},
+            {"latLng" : [47.31949126678269, 4.935713661938761], "icon" : 4},
+            {"latLng" : [47.300168, 4.926502], "icon" : 5},
+            {"latLng" : [47.30878553955885, 4.97198479857517], "icon" : 6}
+        ]
     },
     { 
         "nom" : "Boucle de la vallée de l'Ouche", 
@@ -29,8 +48,23 @@
         "denivele_n" : 1178,
         "page" : "../randonees/bourgogne/boucledelavalleedelouche.html",
         "couleur" : "red",
-        "image" : "../../../images/valleeouche/image6.jpg"
-        
+        "image" : "../../../images/valleeouche/image6.jpg",
+        "lImages" : [
+        "../../images/valleeouche/image1.jpg",
+        "../../images/valleeouche/image2.jpg",
+        "../../images/valleeouche/image3.jpg",
+        "../../images/valleeouche/image4.jpg",
+        "../../images/valleeouche/image5.jpg",
+        "../../images/valleeouche/image6.jpg"
+        ],
+        "points" : [
+            {"latLng" : [47.321565, 4.982513], "icon" : 1},
+            {"latLng" : [47.326189, 4.983282], "icon" : 2},
+            {"latLng" : [47.333288, 4.971143], "icon" : 3},
+            {"latLng" : [47.31949126678269, 4.935713661938761], "icon" : 4},
+            {"latLng" : [47.300168, 4.926502], "icon" : 5},
+            {"latLng" : [47.30878553955885, 4.97198479857517], "icon" : 6}
+        ]
     },
     { 
         "nom" : "Vers le mont Afrique", 
@@ -46,7 +80,26 @@
         "denivele_n" : 840,
         "page" : "../randonees/bourgogne/verslemontafrique.html",
         "couleur" : "blue",
-        "image" : "../../images/verslemontafrique/image5.jpg"
+        "image" : "../../images/verslemontafrique/image5.jpg",
+        "lImages" : [
+            "../../images/verslemontafrique/image1.jpg",
+            "../../images/verslemontafrique/image2.jpg",
+            "../../images/verslemontafrique/image3.jpg",
+            "../../images/verslemontafrique/image4.jpg",
+            "../../images/verslemontafrique/image5.jpg",
+            "../../images/verslemontafrique/image6.jpg",
+            "../../images/verslemontafrique/image7.jpg",
+            "../../images/verslemontafrique/image8.jpg",
+            "../../images/verslemontafrique/image9.jpg"
+        ],
+        "points" : [
+            {"latLng" : [47.321565, 4.982513], "icon" : 1},
+            {"latLng" : [47.326189, 4.983282], "icon" : 2},
+            {"latLng" : [47.333288, 4.971143], "icon" : 3},
+            {"latLng" : [47.31949126678269, 4.935713661938761], "icon" : 4},
+            {"latLng" : [47.300168, 4.926502], "icon" : 5},
+            {"latLng" : [47.30878553955885, 4.97198479857517], "icon" : 6}
+        ]
     }
 
 ]

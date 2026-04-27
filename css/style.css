@@ -127,7 +127,6 @@ header a{
 
 #positionRando{
     display: flex;
-    flex-wrap: wrap;
 }
 
 #topText{
@@ -265,6 +264,20 @@ main{
     #logo{
         height: 100px;
     }
+
+    .randonee{
+        min-width: 250px;
+    }
+
+
+    #positionRando{
+        overflow-x:auto;
+    }
+
+    #positionRando::-webkit-scrollbar{
+        display: none;
+    }
+
 }
 
 @media (max-width: 760px){
@@ -336,6 +349,7 @@ main{
         color: black;
     }
     
+
     #menu-deroulant li{
         padding-top: 20px;
         background: rgb(245, 243, 243);
@@ -371,48 +385,12 @@ main{
         margin-right: 3%;
     }
 
-
     .textInfo li{
         padding: 3%;
         margin-left: 10%;
     }
     
     .randonee{
-        width: 47%;
-        }
-}
-
-@media (max-width: 460px){
-
-
-
-    .textInfo li{
-    background-color: red;
-    font-size: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border: 1px hidden gainsboro ;     
-    margin-left: 3%;
-    }
-
-    .datePubl{
-        margin-left: 50%;
-    }
-}
-
-
-@media (max-width: 400px){
-
-
-
-    .textInfo li{
-    font-size: 80%;
-    
-    }
-
-    .datePubl{
-        margin-left: 50%;
+        flex-shrink: 0;
     }
 }
