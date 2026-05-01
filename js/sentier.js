@@ -56,6 +56,21 @@
             }
         }).addTo(map);
 
+        //Ajout variante si il ya variante
+
+        if(sentier.variante != null){
+            new L.GPX(sentier.variante, {
+            async: true,
+            polyline_options: {
+            color: "red",
+            },
+            markers:{
+                startIcon : null,
+                endIcon : null
+            }
+        }).addTo(map);
+        }
+
     //Ajout des points sur l'itinéraire
     
     const points = sentier.points;

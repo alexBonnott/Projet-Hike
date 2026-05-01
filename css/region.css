@@ -319,6 +319,10 @@ main{
         margin-top: 5%;
         order: 2;
     }
+    
+    #contenair-barre{
+        margin-right: 5%;
+    }
 
     #barreR{
         font-size: 10px;

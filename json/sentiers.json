@@ -27,12 +27,15 @@
         ],
         "points" : [
             {"latLng" : [47.321565, 4.982513], "icon" : 1},
-            {"latLng" : [47.326189, 4.983282], "icon" : 2},
-            {"latLng" : [47.333288, 4.971143], "icon" : 3},
-            {"latLng" : [47.31949126678269, 4.935713661938761], "icon" : 4},
-            {"latLng" : [47.300168, 4.926502], "icon" : 5},
-            {"latLng" : [47.30878553955885, 4.97198479857517], "icon" : 6}
-        ]
+            {"latLng" : [47.302894, 4.947751], "icon" : 2},
+            {"latLng" : [47.293516, 4.932709], "icon" : 3},
+            {"latLng" : [47.293056, 4.924380], "icon" : 4},
+            {"latLng" : [47.296427, 4.901379], "icon" : 5},
+            {"latLng" : [47.316431, 4.912372], "icon" : 6},
+            {"latLng" : [47.333497, 4.970585], "icon" : 7},
+            {"latLng" : [47.324403, 4.986032], "icon" : 8}
+        ],
+        "variante" : "../../gpx/versnotredamedetang/cheminvarianteversnotrededamedetang.gpx"
     },
     { 
         "nom" : "Boucle de la vallée de l'Ouche", 
@@ -62,9 +65,13 @@
             {"latLng" : [47.326189, 4.983282], "icon" : 2},
             {"latLng" : [47.333288, 4.971143], "icon" : 3},
             {"latLng" : [47.31949126678269, 4.935713661938761], "icon" : 4},
-            {"latLng" : [47.300168, 4.926502], "icon" : 5},
-            {"latLng" : [47.30878553955885, 4.97198479857517], "icon" : 6}
-        ]
+            {"latLng" : [47.307665, 4.919935], "icon" : 5},
+            {"latLng" : [47.317337, 4.912803], "icon" : 6},
+            {"latLng" : [47.330468, 4.923365], "icon" : 7},
+            {"latLng" : [47.341888, 4.975238], "icon" : 8},
+            {"latLng" : [47.324133, 4.999899], "icon" : 9}
+        ],
+        "variante" : "../../gpx/valleedelouche/cheminvariantevalleedelouche.gpx"
     },
     { 
         "nom" : "Vers le mont Afrique", 
@@ -99,7 +106,7 @@
             {"latLng" : [47.31949126678269, 4.935713661938761], "icon" : 4},
             {"latLng" : [47.300168, 4.926502], "icon" : 5},
             {"latLng" : [47.30878553955885, 4.97198479857517], "icon" : 6}
-        ]
+        ],
+        "variante" : "../../gpx/verslemontafrique/cheminvarianteverslemontafrique.gpx"
     }
-
 ]
