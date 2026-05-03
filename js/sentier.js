@@ -56,8 +56,7 @@
             }
         }).addTo(map);
 
-        //Ajout variante si il ya variante
-
+        //Ajout de la variante si il y a une variante
         if(sentier.variante != null){
             new L.GPX(sentier.variante, {
             async: true,

@@ -1,8 +1,10 @@
+
 [
     { 
         "nom" : "Vers Notre-Dame d'Etang", 
         "region" : "bourgogne",
         "type" : "sportif, boucle",
+        "departement" : "Côte-dor (21)",
         "depart" : "Dijon (parking de la combe à la Serpent)",
         "arrivee" : "Dijon (parking de la combe à la Serpent)",
         "datePub" : "26/04/2026",
@@ -41,6 +43,7 @@
         "nom" : "Boucle de la vallée de l'Ouche", 
         "region" : "bourgogne",
         "type" : "sportif, boucle",
+        "departement" : "Côte-dor (21)",
         "depart" : "Dijon (parking de la combe à la Serpent)",
         "arrivee" : "Dijon (parking de la combe à la Serpent)",
         "datePub" : "16/04/2026",
@@ -77,6 +80,7 @@
         "nom" : "Vers le mont Afrique", 
         "region" : "bourgogne",
         "type" : "sportif, boucle",
+        "departement" : "Côte-dor (21)",
         "depart" : "Dijon (parking de la combe à la Serpent)",
         "arrivee" : "Dijon (parking de la combe à la Serpent)",
         "datePub" : "12/03/2026",

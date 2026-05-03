@@ -41,7 +41,8 @@ recherche.addEventListener("input", ()=>{
     const texte = recherche.value.toLowerCase();
     const resultat = filtre.filter(s => s.nom.toLowerCase().includes(texte) ||
                                            s.depart.toLowerCase().includes(texte) ||
-                                           s.arrivee.toLowerCase().includes(texte) 
+                                           s.arrivee.toLowerCase().includes(texte) ||
+                                           s.departement.toLowerCase().includes(texte)
     );
     if(resultat.length == 0){
         element.innerHTML = `<div id="resultat">

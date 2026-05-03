@@ -19,7 +19,7 @@ for(let i = 0; i < 3; i++){
                             </ul>
                         </div>
                         <h3>${s.nom}</h3>
-                        <p>${s.region}</p>
+                        <p>${s.departement}</p>
                         <p>${s.type}</p>
                         <a href=${s.page}>Voir plus</a>
                         <p class="datePubl">${s.datePub}</p>
