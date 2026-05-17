@@ -1,5 +1,39 @@
 
 [
+    {
+        "nom" : "Tour de l'étang des Mouettes", 
+        "region" : "occitanie",
+        "type" : "familiale, boucle",
+        "departement" : "Hérault (34)",
+        "depart" : "Frontignan-plage (Avenue Vauban Parking)",
+        "arrivee" : "Frontignan-plage (Avenue Vauban Parking)",
+        "datePub" : "17/05/2026",
+        "description" : "L’étang des Mouettes, situé à l’est de Frontignan, est un espace naturel protégé classé Natura 2000. Ce sentier facile et accessible permet de découvrir une riche biodiversité, avec plus de 130 espèces d’oiseaux et 300 espèces végétales. Un parcours ludique constitué de panneaux d’information, ainsi que des tables de pique-nique, des bancs et une piste cyclable, rendent cette balade idéale pour les familles",
+        "gpx" : "../../gpx/occitanie/touretangmouettes.gpx",
+        "distance" : 2.6,
+        "denivele_p" : 0,
+        "denivele_n" : 0,
+        "page" : "../randonees/occitanie/touretangmouettes.html",
+        "couleur" : "green",
+        "localisationCarte": [43.433685, 3.765767],
+        "zoomCarte" : 15,
+        "image" : "../../../images/occitanie/touretangmouettes/image2.jpg",
+        "lImages" : [
+        "../../images/occitanie/touretangmouettes/image2.jpg",
+        "../../images/occitanie/touretangmouettes/image3.jpg",
+        "../../images/occitanie/touretangmouettes/image4.jpg",
+        "../../images/occitanie/touretangmouettes/image5.jpg",
+        "../../images/occitanie/touretangmouettes/image6.jpg",
+        "../../images/occitanie/touretangmouettes/image7.jpg",
+        "../../images/occitanie/touretangmouettes/image8.jpg",
+        "../../images/occitanie/touretangmouettes/image9.jpg",
+        "../../images/occitanie/touretangmouettes/image10.jpg"
+        ],
+        "points" : [
+            {"latLng" : [43.430823, 3.767118], "icon" : "D/A"}
+        ],
+        "variante" : null
+    },
     { 
         "nom" : "Vers Notre-Dame d'Etang", 
         "region" : "bourgogne",
@@ -9,23 +43,25 @@
         "arrivee" : "Dijon (parking de la combe à la Serpent)",
         "datePub" : "26/04/2026",
         "description" : "Cette randonnée en direction de la chapelle Notre-Dame d’Étang passe par les plateaux de la Combe à la Serpent, le mont Afrique, la montagne d’Étang ainsi que les combes sud de la vallée de l’Ouche. Cet itinéraire est très sportif et offrira un véritable défi aux randonneurs les plus aguerris.",
-        "gpx" : "../../gpx/versnotredamedetang/versnotredamedetang.gpx",
+        "gpx" : "../../gpx/bourgogne/versnotredamedetang/versnotredamedetang.gpx",
         "distance" : 23.5,
         "denivele_p" : 1098,
         "denivele_n" : 1087,
         "page" : "../randonees/bourgogne/versnotredamedetang.html",
         "couleur" : "orange",
-        "image" : "../../../images/valleeouche/image6.jpg",
+        "localisationCarte": [47.321548, 4.982479],
+        "zoomCarte" : 12,
+        "image" : "../../../images/bourgogne/valleeouche/image6.jpg",
         "lImages" : [
-        "../../images/verslemontafrique/image1.jpg",
-        "../../images/verslemontafrique/image2.jpg",
-        "../../images/verslemontafrique/image3.jpg",
-        "../../images/verslemontafrique/image4.jpg",
-        "../../images/verslemontafrique/image5.jpg",
-        "../../images/verslemontafrique/image6.jpg",
-        "../../images/verslemontafrique/image7.jpg",
-        "../../images/verslemontafrique/image8.jpg",
-        "../../images/verslemontafrique/image9.jpg"
+        "../../images/bourgogne/verslemontafrique/image1.jpg",
+        "../../images/bourgogne/verslemontafrique/image2.jpg",
+        "../../images/bourgogne/verslemontafrique/image3.jpg",
+        "../../images/bourgogne/verslemontafrique/image4.jpg",
+        "../../images/bourgogne/verslemontafrique/image5.jpg",
+        "../../images/bourgogne/verslemontafrique/image6.jpg",
+        "../../images/bourgogne/verslemontafrique/image7.jpg",
+        "../../images/bourgogne/verslemontafrique/image8.jpg",
+        "../../images/bourgogne/verslemontafrique/image9.jpg"
         ],
         "points" : [
             {"latLng" : [47.321565, 4.982513], "icon" : 1},
@@ -37,7 +73,7 @@
             {"latLng" : [47.333497, 4.970585], "icon" : 7},
             {"latLng" : [47.324403, 4.986032], "icon" : 8}
         ],
-        "variante" : "../../gpx/versnotredamedetang/cheminvarianteversnotrededamedetang.gpx"
+        "variante" : "../../gpx/bourgogne/versnotredamedetang/cheminvarianteversnotrededamedetang.gpx"
     },
     { 
         "nom" : "Boucle de la vallée de l'Ouche", 
@@ -48,20 +84,22 @@
         "arrivee" : "Dijon (parking de la combe à la Serpent)",
         "datePub" : "16/04/2026",
         "description" : "Cette randonnée fait le tour de la vallée de l’Ouche en passant par ses combes sud et nord. Cet itinéraire est très sportif et offrira un véritable défi aux randonneurs les plus aguerris.",
-        "gpx" : "../../gpx/valleedelouche/valleedelouche.gpx",
+        "gpx" : "../../gpx/bourgogne/valleedelouche/valleedelouche.gpx",
         "distance" : 29,
         "denivele_p" : 1158,
         "denivele_n" : 1178,
         "page" : "../randonees/bourgogne/boucledelavalleedelouche.html",
         "couleur" : "red",
-        "image" : "../../../images/valleeouche/image6.jpg",
+        "localisationCarte": [47.321548, 4.982479],
+        "zoomCarte" : 12,
+        "image" : "../../../images/bourgogne/valleeouche/image6.jpg",
         "lImages" : [
-        "../../images/valleeouche/image1.jpg",
-        "../../images/valleeouche/image2.jpg",
-        "../../images/valleeouche/image3.jpg",
-        "../../images/valleeouche/image4.jpg",
-        "../../images/valleeouche/image5.jpg",
-        "../../images/valleeouche/image6.jpg"
+        "../../images/bourgogne/valleeouche/image1.jpg",
+        "../../images/bourgogne/valleeouche/image2.jpg",
+        "../../images/bourgogne/valleeouche/image3.jpg",
+        "../../images/bourgogne/valleeouche/image4.jpg",
+        "../../images/bourgogne/valleeouche/image5.jpg",
+        "../../images/bourgogne/valleeouche/image6.jpg"
         ],
         "points" : [
             {"latLng" : [47.321565, 4.982513], "icon" : 1},
@@ -74,7 +112,7 @@
             {"latLng" : [47.341888, 4.975238], "icon" : 8},
             {"latLng" : [47.324133, 4.999899], "icon" : 9}
         ],
-        "variante" : "../../gpx/valleedelouche/cheminvariantevalleedelouche.gpx"
+        "variante" : "../../gpx/bourgogne/valleedelouche/cheminvariantevalleedelouche.gpx"
     },
     { 
         "nom" : "Vers le mont Afrique", 
@@ -85,23 +123,25 @@
         "arrivee" : "Dijon (parking de la combe à la Serpent)",
         "datePub" : "12/03/2026",
         "description" : "Cette randonnée en direction du mont Afrique explore les combes sud de la vallée de l’Ouche, les contreforts du mont Afrique, puis les plateaux de la combe à la Serpent, avant de se terminer par l’ascension du fort de la Motte-Giron.",
-        "gpx" : "../../gpx/verslemontafrique/verslemontafrique.gpx",
+        "gpx" : "../../gpx/bourgogne/verslemontafrique/verslemontafrique.gpx",
         "distance" : 22.5,
         "denivele_p" : 830,
         "denivele_n" : 840,
         "page" : "../randonees/bourgogne/verslemontafrique.html",
         "couleur" : "blue",
-        "image" : "../../images/verslemontafrique/image5.jpg",
+        "localisationCarte": [47.321548, 4.982479],
+        "zoomCarte" : 12,
+        "image" : "../../images/bourgogne/verslemontafrique/image5.jpg",
         "lImages" : [
-            "../../images/verslemontafrique/image1.jpg",
-            "../../images/verslemontafrique/image2.jpg",
-            "../../images/verslemontafrique/image3.jpg",
-            "../../images/verslemontafrique/image4.jpg",
-            "../../images/verslemontafrique/image5.jpg",
-            "../../images/verslemontafrique/image6.jpg",
-            "../../images/verslemontafrique/image7.jpg",
-            "../../images/verslemontafrique/image8.jpg",
-            "../../images/verslemontafrique/image9.jpg"
+            "../../images/bourgogne/verslemontafrique/image1.jpg",
+            "../../images/bourgogne/verslemontafrique/image2.jpg",
+            "../../images/bourgogne/verslemontafrique/image3.jpg",
+            "../../images/bourgogne/verslemontafrique/image4.jpg",
+            "../../images/bourgogne/verslemontafrique/image5.jpg",
+            "../../images/bourgogne/verslemontafrique/image6.jpg",
+            "../../images/bourgogne/verslemontafrique/image7.jpg",
+            "../../images/bourgogne/verslemontafrique/image8.jpg",
+            "../../images/bourgogne/verslemontafrique/image9.jpg"
         ],
         "points" : [
             {"latLng" : [47.321565, 4.982513], "icon" : 1},
@@ -111,6 +151,6 @@
             {"latLng" : [47.300168, 4.926502], "icon" : 5},
             {"latLng" : [47.30878553955885, 4.97198479857517], "icon" : 6}
         ],
-        "variante" : "../../gpx/verslemontafrique/cheminvarianteverslemontafrique.gpx"
+        "variante" : "../../gpx/bourgogne/verslemontafrique/cheminvarianteverslemontafrique.gpx"
     }
 ]

@@ -1,7 +1,7 @@
 
         // L'id du container, par exemple <div id="map"></div>
 
-        var map = L.map('map').setView([47.319215, 5.041470], 10);
+        var map = L.map('map').setView([43.454293, 3.780532], 12);
 		
         // Plan IGN avec une transparence de 50%
         var planIGN = L.tileLayer('https://data.geopf.fr/wmts?'+

@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>RandoGo - Carte des sentiers</title>
-        <link rel="stylesheet" href="css/carte.css"/>
+        <title>RandoGo - Bourgogne</title>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../css/region.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="icon" type="images/png" href="images/logo.png"/>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <script src="https://unpkg.com/leaflet-gpx/gpx.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.css" />
-        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-        <script src="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.umd.js"></script>
+        <link rel="icon" type="images/png" href="../images/logo.png"/>
     </head>
-    <body>
+    <body data-region="occitanie">
         <header>
             <nav>
                 <div id="contenair-logo">
@@ -29,37 +22,46 @@
                         <line x1="25" y1="5" x2="5" y2="25" stroke="black" stroke-width="3"/>
                     </svg>
                 </div>
-                <a href="index.html"><img alt="logo" id="logo" src="images/logo.png"></a>
+                <a href="../index.html"><img alt="logo" id="logo" src="../images/logo.png"></a>
                 <ul class="menu">
                     <li class="option">Mes randonnées
                         <ul class="sousOption">
-                            <li><a href="regions/bourgogne.html">Bourgogne</a></li>
-                            <li><a href="regions/occitanie.html">Occitanie</a></li>
+                            <li><a href="bourgogne.html">Bourgogne</a></li>
+                            <li><a href="occitanie.html">Occitanie</a></li>
                         </ul>
                     </li>
-                    <li><a href="carte.html">Carte</a>
+                    <li><a href="../carte.html">Carte</a>
                     </li>
-                    <li><a href="information.html">A propos</a></li>
+                    <li><a href="../information.html">A propos</a></li>
                 </ul>
             </nav>
         </header>
-        <hr style="border: solid 0.01cm #2E8B57; margin-bottom: 0; padding: 0;"/>
+        <hr style="border: solid 0.01cm #2E8B57; margin-bottom: 0;"/>
         <main>
             <nav>
                 <div id="menu-contenair">
                     <ul id="menu-deroulant">
                         <li class="optionD">Mes randonnées</li>
-                        <li class="sousOptionD"><a href="regions/bourgogne.html">Bourgogne</a></li>
-                        <li class="sousOptionD"><a href="regions/occitanie.html">Occitanie</a></li>
-                        <li><a href="carte.html">Carte</a>
+                        <li class="sousOptionD"><a href="bourgogne.html">Bourgogne</a></li>
+                        <li class="sousOptionD"><a href="occitanie.html">Occitanie</a></li>
+                        <li><a href="../carte.html">Carte</a>
                         </li>
-                        <li><a href="information.html">A propos</a></li>
+                        <li><a href="../information.html">A propos</a></li>
                     </ul>
                 </div>
             </nav>
-            <h3>Carte des sentier</h3>
-            <div id="map">
-
+            <div id="contenair-barre">
+                <svg id="loupe"  viewbox="0 0 30 30" >
+                    <circle cx="50%" cy="50%" r="25%" fill="none" stroke="green" stroke-width="2"></circle>
+                    <line x1="73%" y1 = "73%" x2="95%", y2="95%" stroke="green" stroke-width="2"></line>
+                </svg>
+                <input id="barreR" type="text" placeholder="Rechercher une randonnée, département, ville ..."/>
+            </div>
+            <div id="randonnees">
+            </div>
+            <div id="bas-page">
+                <a class="button-page">1</a>
+                <a class="button-page">2</a>
             </div>
         </main>
         <hr style="border: solid 0.01cm gainsboro;"/>
@@ -84,7 +86,7 @@
                 <p>© 2026 RandoGo. Tous droits réservés.</p>
             </div>
         </footer>
-        <script type="module" src="js/carte.js"></script>
-        <script src="js/fonction/menuderoulant.js"></script>
+        <script src="../js/fonction/menuderoulant.js"></script>
+        <script type="module" src="../js/region.js"></script>
     </body>
 </html>
