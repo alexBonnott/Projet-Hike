@@ -6,7 +6,7 @@ document.getElementById("topText").innerHTML += `<p>Dernier ajout : ${lSentiers[
 const element = document.getElementById("positionRando");
 
 
-for(let i = 0; i < 4; i++){
+for(let i = 0; i < 5; i++){
     const s = lSentiers[i];
     element.innerHTML += `
                     <div class="randonee">

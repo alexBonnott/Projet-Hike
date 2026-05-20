@@ -90,7 +90,12 @@
 
 
     //Recupération de la liste des images du sentier
-    const images = sentier.lImages;
+    const nbImage = sentier.nbImages;
+
+    const images = [];
+    for(let i = 1; i <= nbImage; i++){
+        images.push(`${sentier.dossierImage}/image${i}.jpg`);
+    }
 
     //position dans la liste des images
     let index = 0;

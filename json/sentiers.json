@@ -1,5 +1,31 @@
 
-[
+[   {
+        "nom" : "Tour de l'étang d'Ingril", 
+        "region" : "occitanie",
+        "type" : "familiale, boucle",
+        "departement" : "Hérault (34)",
+        "depart" : "Frotignan (parking du plan du Bassin)",
+        "arrivee" : "Frotignan (parking du plan du Bassin)",
+        "datePub" : "20/05/2026",
+        "description" : "L’étang d’Ingril, situé à l’est de Frontignan, est un espace naturel protégé classé Natura 2000, réputé pour sa riche biodiversité et ses paysages entre Méditerranée et massif de la Gardiole. Ce sentier plat et facile permet d’observer de nombreuses espèces d’oiseaux, comme les flamants roses et les hérons, tout en profitant d’une agréable et longue balade accessible aux familles",
+        "gpx" : "../../gpx/occitanie/touretangingril.gpx",
+        "distance" : 15.5,
+        "denivele_p" : 84,
+        "denivele_n" : 76,
+        "page" : "../randonees/occitanie/touretangingril.html",
+        "couleur" : "blue",
+        "localisationCarte": [43.449120, 3.789554],
+        "zoomCarte" : 12,
+        "image" : "../../../images/occitanie/touretangingril/image10.jpg",
+        "nbImages" : 22,
+        "dossierImage" : "../../../images/occitanie/touretangingril",
+        "points" : [
+            {"latLng" : [43.445496, 3.760351], "icon" : 1},
+            {"latLng" : [43.459249, 3.770278], "icon" : 2},
+            {"latLng" : [43.466379, 3.814609], "icon" : 3}
+        ],
+        "variante" : null
+    },
     {
         "nom" : "Tour de l'étang des Mouettes", 
         "region" : "occitanie",
@@ -17,18 +43,9 @@
         "couleur" : "green",
         "localisationCarte": [43.433685, 3.765767],
         "zoomCarte" : 15,
-        "image" : "../../../images/occitanie/touretangmouettes/image2.jpg",
-        "lImages" : [
-        "../../images/occitanie/touretangmouettes/image2.jpg",
-        "../../images/occitanie/touretangmouettes/image3.jpg",
-        "../../images/occitanie/touretangmouettes/image4.jpg",
-        "../../images/occitanie/touretangmouettes/image5.jpg",
-        "../../images/occitanie/touretangmouettes/image6.jpg",
-        "../../images/occitanie/touretangmouettes/image7.jpg",
-        "../../images/occitanie/touretangmouettes/image8.jpg",
-        "../../images/occitanie/touretangmouettes/image9.jpg",
-        "../../images/occitanie/touretangmouettes/image10.jpg"
-        ],
+        "image" : "../../../images/occitanie/touretangmouettes/image5.jpg",
+        "nbImages" : 9,
+        "dossierImage" : "../../../images/occitanie/touretangmouettes",
         "points" : [
             {"latLng" : [43.430823, 3.767118], "icon" : "D/A"}
         ],
@@ -52,17 +69,8 @@
         "localisationCarte": [47.321548, 4.982479],
         "zoomCarte" : 12,
         "image" : "../../../images/bourgogne/valleeouche/image6.jpg",
-        "lImages" : [
-        "../../images/bourgogne/verslemontafrique/image1.jpg",
-        "../../images/bourgogne/verslemontafrique/image2.jpg",
-        "../../images/bourgogne/verslemontafrique/image3.jpg",
-        "../../images/bourgogne/verslemontafrique/image4.jpg",
-        "../../images/bourgogne/verslemontafrique/image5.jpg",
-        "../../images/bourgogne/verslemontafrique/image6.jpg",
-        "../../images/bourgogne/verslemontafrique/image7.jpg",
-        "../../images/bourgogne/verslemontafrique/image8.jpg",
-        "../../images/bourgogne/verslemontafrique/image9.jpg"
-        ],
+        "nbImages" : 9,
+        "dossierImage" : "../../../images/bourgogne/verslemontafrique",
         "points" : [
             {"latLng" : [47.321565, 4.982513], "icon" : 1},
             {"latLng" : [47.302894, 4.947751], "icon" : 2},
@@ -93,14 +101,8 @@
         "localisationCarte": [47.321548, 4.982479],
         "zoomCarte" : 12,
         "image" : "../../../images/bourgogne/valleeouche/image6.jpg",
-        "lImages" : [
-        "../../images/bourgogne/valleeouche/image1.jpg",
-        "../../images/bourgogne/valleeouche/image2.jpg",
-        "../../images/bourgogne/valleeouche/image3.jpg",
-        "../../images/bourgogne/valleeouche/image4.jpg",
-        "../../images/bourgogne/valleeouche/image5.jpg",
-        "../../images/bourgogne/valleeouche/image6.jpg"
-        ],
+        "nbImages" : 6,
+        "dossierImage" : "../../../images/bourgogne/valleeouche",
         "points" : [
             {"latLng" : [47.321565, 4.982513], "icon" : 1},
             {"latLng" : [47.326189, 4.983282], "icon" : 2},
@@ -132,17 +134,8 @@
         "localisationCarte": [47.321548, 4.982479],
         "zoomCarte" : 12,
         "image" : "../../images/bourgogne/verslemontafrique/image5.jpg",
-        "lImages" : [
-            "../../images/bourgogne/verslemontafrique/image1.jpg",
-            "../../images/bourgogne/verslemontafrique/image2.jpg",
-            "../../images/bourgogne/verslemontafrique/image3.jpg",
-            "../../images/bourgogne/verslemontafrique/image4.jpg",
-            "../../images/bourgogne/verslemontafrique/image5.jpg",
-            "../../images/bourgogne/verslemontafrique/image6.jpg",
-            "../../images/bourgogne/verslemontafrique/image7.jpg",
-            "../../images/bourgogne/verslemontafrique/image8.jpg",
-            "../../images/bourgogne/verslemontafrique/image9.jpg"
-        ],
+        "nbImages" : 9,
+        "dossierImage" : "../../../images/bourgogne/verslemontafrique",
         "points" : [
             {"latLng" : [47.321565, 4.982513], "icon" : 1},
             {"latLng" : [47.326189, 4.983282], "icon" : 2},
