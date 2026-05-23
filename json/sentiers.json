@@ -16,8 +16,8 @@
         "couleur" : "red",
         "localisationCarte": [43.464775, 3.751313],
         "zoomCarte" : 13,
-        "image" : "../../../images/occitanie/balconsfrontignan/image13.jpg",
-        "nbImages" : 32,
+        "image" : "../../../images/occitanie/balconsfrontignan/image11.jpg",
+        "nbImages" : 25,
         "dossierImage" : "../../../images/occitanie/balconsfrontignan",
         "points" : [
             {"latLng" : [43.456011, 3.752442], "icon" : 1},
