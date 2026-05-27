@@ -18,7 +18,7 @@
         "localisationCarte": [43.464775, 3.751313],
         "zoomCarte" : 13,
         "image" : "../../../images/occitanie/balconsfrontignan/image11.jpg",
-        "nbImages" : 25,
+        "nbImages" : 20,
         "dossierImage" : "../../../images/occitanie/balconsfrontignan",
         "points" : [
             {"latLng" : [43.456011, 3.752442], "icon" : 1},
@@ -44,7 +44,7 @@
         "localisationCarte": [43.449120, 3.789554],
         "zoomCarte" : 12,
         "image" : "../../../images/occitanie/touretangingril/image10.jpg",
-        "nbImages" : 22,
+        "nbImages" : 20,
         "dossierImage" : "../../../images/occitanie/touretangingril",
         "points" : [
             {"latLng" : [43.445496, 3.760351], "icon" : 1},
