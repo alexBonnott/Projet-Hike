@@ -4,7 +4,7 @@ html, body{
     padding: 0;
     height: 100%;
     overflow-x: hidden;
-
+    
 }
 
 header {
@@ -233,7 +233,7 @@ footer{
         border: none;
 }
 
-.marker{
+.marker_point{
     background-color: #2E8B57;
     width: 25px;
     height: 25px;
@@ -247,6 +247,19 @@ footer{
     border: 2px solid white;
 }
 
+.marker_interet{
+    background-color: rgb(101, 101, 255);
+    width: 15px;
+    height: 15px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid white;
+}
 
 
 .contenair-image{
@@ -387,6 +400,40 @@ main{
     position: relative;
 }
 
+.image-interet{
+    
+    width: 100px;
+    height: 90px;
+    border-radius: 5px;
+    border: 5px solid white;
+    margin-right: 30px;
+}
+
+.lieu p{
+    margin-top: 5px;
+}
+
+.lieu h3{
+    margin: 0;
+}
+
+
+.lieu{
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: #2E8B57;;
+    display: flex;
+    align-items: center;
+}
+
+#lieu1{
+    scroll-margin-top : 250px;
+}
 @media (max-width:1439px){
     #buttonLeft, #buttonRight{
         display: none;

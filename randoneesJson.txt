@@ -1,30 +1,3 @@
-{
-        "nom" : "Entre Culture et Vigne", 
-        "region" : "occitanie",
-        "type" : "familiale, boucle",
-        "departement" : "Hérault (34)",
-        "depart" : "Frotignan (Halle des Sports Nikola Karabatic)",
-        "arrivee" : "Frotignan (Halle des Sports Nikola Karabatic)",
-        "datePub" : null,
-        "description" : "Cette randonnée facile et accessible aux familles vous invite à découvrir le massif de la Gardiole, un espace naturel protégé offrant de magnifiques panoramas sur les étangs, les vignobles et la Méditerranée. Entre garrigue, vallées et cols, cet itinéraire mêle nature et patrimoine à travers la découverte de capitelles, d’un ancien four à chaux et des paysages typiques de Frontignan",
-        "gpx" : "../../gpx/occitanie/cultureetvignes.gpx",
-        "distance" : 9,
-        "denivele_p" : 223,
-        "denivele_n" : 248,
-        "page" : "../randonees/occitanie/cultureetvigne.html",
-        "couleur" : "purple",
-        "localisationCarte": [43.464775, 3.751313],
-        "zoomCarte" : 13,
-        "image" : "../../../images/occitanie/cultureetvigne",
-        "nbImages" : null,
-        "dossierImage" : "../../../images/occitanie/cultureetvigne",
-        "points" : [
-            {"latLng" : [43.456011, 3.752442], "icon" : 1},
-            {"latLng" : [43.470120, 3.749909], "icon" : 2},
-            {"latLng" : [43.467342, 3.749101], "icon" : 3}
-        ],
-        "variante" : null
-    },
 
 {
         "nom" : "Tour du massif de la Gardiole", 

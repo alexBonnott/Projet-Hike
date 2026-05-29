@@ -1,6 +1,33 @@
 
 [
     {
+        "nom" : "Chemin des capitelles", 
+        "region" : "occitanie",
+        "type" : "familiale, boucle",
+        "departement" : "Hérault (34)",
+        "depart" : "Frotignan (Halle des Sports Nikola Karabatic)",
+        "arrivee" : "Frotignan (Halle des Sports Nikola Karabatic)",
+        "datePub" : "29/05/2026",
+        "description" : "Cette randonnée facile et accessible aux familles vous invite à découvrir le massif de la Gardiole, un espace naturel protégé offrant de magnifiques panoramas sur les étangs, les vignobles et la Méditerranée. Entre garrigue, vallées et cols, cet itinéraire mêle nature et patrimoine à travers la découverte de capitelles, d’un ancien four à chaux et des paysages typiques de Frontignan",
+        "gpx" : "../../gpx/occitanie/chemincapitelles/chemincapitelles.gpx",
+        "distance" : 5,
+        "denivele_p" : 113,
+        "denivele_n" : 112,
+        "page" : "../randonees/occitanie/cultureetvigne.html",
+        "couleur" : "purple",
+        "localisationCarte": [43.464775, 3.751313],
+        "zoomCarte" : 13,
+        "image" : "../../../images/occitanie/cultureetvigne/image9.jpg",
+        "nbImages" : 20,
+        "dossierImage" : "../../../images/occitanie/cultureetvigne",
+        "points" : [
+            {"latLng" : [43.456011, 3.752442], "ancre" : "#partie1", "classe" : "marker_point", "icon" : 1},
+            {"latLng" : [43.469940, 3.753415], "ancre" : "#partie1", "classe" : "marker_point", "icon" : 2}
+        ],
+        "variante" : "../../gpx/occitanie/chemincapitelles/cheminvariante.gpx"
+    },
+
+    {
         "nom" : "Les Balcons de Frontignan", 
         "region" : "occitanie",
         "type" : "familiale, boucle",
@@ -21,8 +48,8 @@
         "nbImages" : 20,
         "dossierImage" : "../../../images/occitanie/balconsfrontignan",
         "points" : [
-            {"latLng" : [43.456011, 3.752442], "icon" : 1},
-            {"latLng" : [43.475338, 3.762915], "icon" : 2}
+            {"latLng" : [43.456011, 3.752442], "ancre" : "#partie1", "classe" : "marker_point", "icon" : 1},
+            {"latLng" : [43.475338, 3.762915], "ancre" : "#partie2", "classe" : "marker_point", "icon" : 2}
         ],
         "variante" : null
     },
@@ -47,9 +74,10 @@
         "nbImages" : 20,
         "dossierImage" : "../../../images/occitanie/touretangingril",
         "points" : [
-            {"latLng" : [43.445496, 3.760351], "icon" : 1},
-            {"latLng" : [43.459249, 3.770278], "icon" : 2},
-            {"latLng" : [43.466379, 3.814609], "icon" : 3}
+            {"latLng" : [43.445496, 3.760351], "ancre" : "#partie1", "classe" : "marker_point", "icon" : 1},
+            {"latLng" : [43.459249, 3.770278], "ancre" : "#partie2", "classe" : "marker_point", "icon" : 2},
+            {"latLng" : [43.466379, 3.814609], "ancre" : "#partie3", "classe" : "marker_point", "icon" : 3},
+            {"latLng" : [43.460941, 3.795677], "ancre" : "#lieu1", "classe" : "marker_interet", "icon" : "i"}
         ],
         "variante" : null
     },
@@ -74,7 +102,7 @@
         "nbImages" : 9,
         "dossierImage" : "../../../images/occitanie/touretangmouettes",
         "points" : [
-            {"latLng" : [43.430823, 3.767118], "icon" : "D/A"}
+            {"latLng" : [43.430823, 3.767118], "ancre" : "#content", "classe" : "marker_point", "icon" : "D/A"}
         ],
         "variante" : null
     },
@@ -99,14 +127,14 @@
         "nbImages" : 9,
         "dossierImage" : "../../../images/bourgogne/verslemontafrique",
         "points" : [
-            {"latLng" : [47.321565, 4.982513], "icon" : 1},
-            {"latLng" : [47.302894, 4.947751], "icon" : 2},
-            {"latLng" : [47.293516, 4.932709], "icon" : 3},
-            {"latLng" : [47.293056, 4.924380], "icon" : 4},
-            {"latLng" : [47.296427, 4.901379], "icon" : 5},
-            {"latLng" : [47.316431, 4.912372], "icon" : 6},
-            {"latLng" : [47.333497, 4.970585], "icon" : 7},
-            {"latLng" : [47.324403, 4.986032], "icon" : 8}
+            {"latLng" : [47.321565, 4.982513], "ancre" : "#partie1", "classe" : "marker_point", "icon" : 1},
+            {"latLng" : [47.302894, 4.947751], "ancre" : "#partie2", "classe" : "marker_point", "icon" : 2},
+            {"latLng" : [47.293516, 4.932709], "ancre" : "#partie3", "classe" : "marker_point", "icon" : 3},
+            {"latLng" : [47.293056, 4.924380], "ancre" : "#partie4", "classe" : "marker_point", "icon" : 4},
+            {"latLng" : [47.296427, 4.901379], "ancre" : "#partie5", "classe" : "marker_point", "icon" : 5},
+            {"latLng" : [47.316431, 4.912372], "ancre" : "#partie6", "classe" : "marker_point", "icon" : 6},
+            {"latLng" : [47.333497, 4.970585], "ancre" : "#partie7", "classe" : "marker_point", "icon" : 7},
+            {"latLng" : [47.324403, 4.986032], "ancre" : "#partie8", "classe" : "marker_point", "icon" : 8}
         ],
         "variante" : "../../gpx/bourgogne/versnotredamedetang/cheminvarianteversnotrededamedetang.gpx"
     },
@@ -131,15 +159,15 @@
         "nbImages" : 6,
         "dossierImage" : "../../../images/bourgogne/valleeouche",
         "points" : [
-            {"latLng" : [47.321565, 4.982513], "icon" : 1},
-            {"latLng" : [47.326189, 4.983282], "icon" : 2},
-            {"latLng" : [47.333288, 4.971143], "icon" : 3},
-            {"latLng" : [47.31949126678269, 4.935713661938761], "icon" : 4},
-            {"latLng" : [47.307665, 4.919935], "icon" : 5},
-            {"latLng" : [47.317337, 4.912803], "icon" : 6},
-            {"latLng" : [47.330468, 4.923365], "icon" : 7},
-            {"latLng" : [47.341888, 4.975238], "icon" : 8},
-            {"latLng" : [47.324133, 4.999899], "icon" : 9}
+            {"latLng" : [47.321565, 4.982513], "ancre" : "#partie1", "classe" : "marker_point", "icon" : 1},
+            {"latLng" : [47.326189, 4.983282], "ancre" : "#partie2", "classe" : "marker_point", "icon" : 2},
+            {"latLng" : [47.333288, 4.971143], "ancre" : "#partie3", "classe" : "marker_point", "icon" : 3},
+            {"latLng" : [47.31949126678269, 4.935713661938761], "ancre" : "#partie4", "classe" : "marker_point", "icon" : 4},
+            {"latLng" : [47.307665, 4.919935], "ancre" : "#partie5", "classe" : "marker_point", "icon" : 5},
+            {"latLng" : [47.317337, 4.912803], "ancre" : "#partie6", "classe" : "marker_point", "icon" : 6},
+            {"latLng" : [47.330468, 4.923365], "ancre" : "#partie7", "classe" : "marker_point", "icon" : 7},
+            {"latLng" : [47.341888, 4.975238], "ancre" : "#partie8", "classe" : "marker_point", "icon" : 8},
+            {"latLng" : [47.324133, 4.999899], "ancre" : "#partie9", "classe" : "marker_point", "icon" : 9}
         ],
         "variante" : "../../gpx/bourgogne/valleedelouche/cheminvariantevalleedelouche.gpx"
     },
@@ -164,12 +192,12 @@
         "nbImages" : 9,
         "dossierImage" : "../../../images/bourgogne/verslemontafrique",
         "points" : [
-            {"latLng" : [47.321565, 4.982513], "icon" : 1},
-            {"latLng" : [47.326189, 4.983282], "icon" : 2},
-            {"latLng" : [47.333288, 4.971143], "icon" : 3},
-            {"latLng" : [47.31949126678269, 4.935713661938761], "icon" : 4},
-            {"latLng" : [47.300168, 4.926502], "icon" : 5},
-            {"latLng" : [47.30878553955885, 4.97198479857517], "icon" : 6}
+            {"latLng" : [47.321565, 4.982513], "ancre" : "#partie1", "classe" : "marker_point", "icon" : 1},
+            {"latLng" : [47.326189, 4.983282], "ancre" : "#partie2", "classe" : "marker_point", "icon" : 2},
+            {"latLng" : [47.333288, 4.971143], "ancre" : "#partie3", "classe" : "marker_point", "icon" : 3},
+            {"latLng" : [47.31949126678269, 4.935713661938761], "ancre" : "#partie4", "classe" : "marker_point", "icon" : 4},
+            {"latLng" : [47.300168, 4.926502], "ancre" : "#partie5", "classe" : "marker_point", "icon" : 5},
+            {"latLng" : [47.30878553955885, 4.97198479857517], "ancre" : "#partie6", "classe" : "marker_point", "icon" : 6}
         ],
         "variante" : "../../gpx/bourgogne/verslemontafrique/cheminvarianteverslemontafrique.gpx"
     }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="Calcul itineraires - www.calculitineraires.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<name>Mon parcours</name>
+<trkseg>
+<trkpt lat="43.461688164578135" lon="3.744290817752747">
+</trkpt>
+<trkpt lat="43.461682" lon="3.744293">
+</trkpt>
+<trkpt lat="43.461622" lon="3.744029">
+</trkpt>
+<trkpt lat="43.461624" lon="3.743935">
+</trkpt>
+<trkpt lat="43.461684" lon="3.743739">
+</trkpt>
+<trkpt lat="43.461686" lon="3.743608">
+</trkpt>
+<trkpt lat="43.461673" lon="3.74353">
+</trkpt>
+<trkpt lat="43.46162" lon="3.743406">
+</trkpt>
+<trkpt lat="43.461439" lon="3.743087">
+</trkpt>
+<trkpt lat="43.461339" lon="3.742955">
+</trkpt>
+<trkpt lat="43.461076" lon="3.742642">
+</trkpt>
+<trkpt lat="43.460927" lon="3.74236">
+</trkpt>
+<trkpt lat="43.460766" lon="3.742217">
+</trkpt>
+<trkpt lat="43.460815" lon="3.742009">
+</trkpt>
+<trkpt lat="43.460807" lon="3.741873">
+</trkpt>
+<trkpt lat="43.46078" lon="3.741801">
+</trkpt>
+<trkpt lat="43.460808" lon="3.74171">
+</trkpt>
+<trkpt lat="43.460873" lon="3.741672">
+</trkpt>
+<trkpt lat="43.461078" lon="3.741682">
+</trkpt>
+<trkpt lat="43.461222" lon="3.741663">
+</trkpt>
+<trkpt lat="43.461378" lon="3.741773">
+</trkpt>
+<trkpt lat="43.461565" lon="3.741797">
+</trkpt>
+<trkpt lat="43.4617" lon="3.741888">
+</trkpt>
+<trkpt lat="43.461737" lon="3.741944">
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

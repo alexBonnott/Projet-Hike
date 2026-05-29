@@ -80,9 +80,7 @@
         L.marker(p.latLng, {
             icon : L.divIcon({
                 className : "icon-marker",
-                html : `<a href="#partie${p.icon}"><div class="marker">${p.icon}</div></a>`,
-                iconSize : [30, 30],
-                iconAnchor: [15, 15]
+                html : `<a href="${p.ancre}"><div class="${p.classe}">${p.icon}</div></a>`,
             })
         }).addTo(map);
     });
